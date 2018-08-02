@@ -1,0 +1,1 @@
+require('./src/FRS-hide-scrollbar.js');
