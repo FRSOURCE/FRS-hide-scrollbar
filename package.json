@@ -1,9 +1,9 @@
 {
-  "name": "frs-hide-scrollbar",
-  "version": "0.1.0",
-  "description": "Easy & lightweight solution for cross-browser scrollbar hiding",
-  "main": "index.js",
-  "scripts": {
+  "name"           : "frs-hide-scrollbar",
+  "version"        : "0.1.1",
+  "description"    : "Easy & lightweight solution for cross-browser scrollbar hiding",
+  "main"           : "index.js",
+  "scripts"        : {
     "test"          : "tape src/*.spec.js",
     "test-coverage" : "yarn test --cov --coverage-report=lcov",
     "prestart"      : "yarn clean",
@@ -17,16 +17,16 @@
     "predevExample" : "yarn clean",
     "devExample"    : "parcel docs/example.src.html -d docs -o example.dist.html",
     "clean"         : "rimraf dist/**/* && rimraf docs/*.dist.html && rimraf docs/*.{js,css,map} && rimraf report.html",
-    "docs": "jsdoc2md src/**/*.js > docs/api.md"
+    "docs"          : "jsdoc2md src/**/*.js > docs/api.md"
   },
-  "author": "Jakub Freisler <FRSgit@users.noreply.github.com>",
-  "license": "Apache-2.0",
-  "homepage": "https://github.com/FRSource/FRS-hide-scrollbarc#readme",
-  "repository": {
+  "author"         : "Jakub Freisler <FRSgit@users.noreply.github.com>",
+  "license"        : "Apache-2.0",
+  "homepage"       : "https://github.com/FRSource/FRS-hide-scrollbarc#readme",
+  "repository"     : {
     "type": "git",
     "url": "git+https://github.com/FRSource/FRS-hide-scrollbar.git"
   },
-  "keywords": [
+  "keywords"       : [
     "hide scroll",
     "efficient",
     "lightweight",
@@ -37,13 +37,13 @@
     "css",
     "js"
   ],
-  "files": [
+  "files"          : [
     "dist/",
     "src/",
     "LICENSE",
     "yarn.lock"
   ],
-  "bugs": {
+  "bugs"           : {
     "url": "https://github.com/FRSource/FRS-hide-scrollbar/issues"
   },
   "devDependencies": {
