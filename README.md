@@ -1,2 +1,5 @@
-# FRS-tiny-carousel
-Mobile &amp; desktop-friendly, tiny, efficient (vanilaJS) carousel which takes advantage of CSS snap points (or polyfills it)!
+# FRS-hide-scrollbar
+
+FRS-hide-scrollbar is cross-compatible, simple & lightweight library for hiding both horizontal & vertical scrollbars!
+
+For more information, please see [docs](https://frsource.github.io/FRS-hide-scrollbar/).

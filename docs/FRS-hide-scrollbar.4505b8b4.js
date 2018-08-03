@@ -82,6 +82,6 @@ parcelRequire = function (e, r, n, t) {
 
   }, {}], 'GZcb': [function (require, module, exports) {
     require('./scripts/FRSHideScrollbar.js'), require('./styles/FRSHideScrollbar.scss');
-  }, {'./scripts/FRSHideScrollbar.js': '757W', './styles/FRSHideScrollbar.scss': 'NEft'}]
-}, {}, ['GZcb'], null);
+  }, {'./scripts/FRSHideScrollbar.js': '757W', "./styles/FRSHideScrollbar.scss": "NEft"}]
+}, {}, ["GZcb"], null);
 //# sourceMappingURL=/FRS-hide-scrollbar/FRS-hide-scrollbar.4505b8b4.map
