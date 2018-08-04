@@ -3,19 +3,19 @@
 Simply require the package:
 
 ```javascript
-require('default-passive-events');
+require('frs-hide-scrollbar');
 ```
 
 or include it locally:
 
 ```html
-<script type="text/javascript" src="node_modules/default-passive-events/dist/index.js"></script>
+<script type="text/javascript" src="node_modules/frs-hide-scrollbar/dist/FRS-hide-scrollbar.vanilla.js"></script>
 ```
 
 or from [unpkg](https://unpkg.com/#/) [CDN](https://en.wikipedia.org/wiki/Content_delivery_network):
 
 ```html
-<script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
+<script type="text/javascript" src="https://unpkg.com/frs-hide-scrollbar"></script>
 ```
 
 To make the scrollbar of your element/s hidden just initialize FRSHideScrollbar library on it/them:

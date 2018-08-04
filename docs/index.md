@@ -5,7 +5,7 @@ FRS-hide-scrollbar is cross-compatible, simple & lightweight library for hiding 
 ### Installation
 
 ```
-$ yarn add default-passive-events
+$ yarn add frs-hide-scrollbar
 ```
 
 #### Table of contents:
