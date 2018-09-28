@@ -90,4 +90,4 @@ parcelRequire = function (e, r, n, t) {
     require('./scripts/FRSHideScrollbar.js'), require('./styles/FRSHideScrollbar.scss');
   }, {'./scripts/FRSHideScrollbar.js': '757W', './styles/FRSHideScrollbar.scss': 'NEft'}]
 }, {}, ['GZcb'], null);
-//# sourceMappingURL=/FRS-hide-scrollbar/FRS-hide-scrollbar.40dd5755.map
+//# sourceMappingURL=/FRS-hide-scrollbar/FRS-hide-scrollbar.752d66b8.map

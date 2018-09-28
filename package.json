@@ -1,9 +1,9 @@
 {
-  "name"           : "frs-hide-scrollbar",
-  "version"        : "0.1.7",
-  "description"    : "Easy & lightweight solution for cross-browser scrollbar hiding",
-  "main"           : "index.js",
-  "scripts"        : {
+  "name"       : "frs-hide-scrollbar",
+  "version"    : "0.1.8",
+  "description": "Easy & lightweight solution for cross-browser scrollbar hiding",
+  "main"       : "index.js",
+  "scripts"    : {
     "test"             : "tape src/*.spec.js",
     "test-coverage"    : "yarn test --cov --coverage-report=lcov",
     "prestart"         : "yarn clean",
