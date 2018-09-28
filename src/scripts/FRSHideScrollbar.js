@@ -1,33 +1,24 @@
-window.FRSHideScrollBar             = FRSHideScrollBar;
-FRSHideScrollBar.refreshScrollWidth = refreshScrollWidth;
-FRSHideScrollBar.config             = {
-  className       : 'frs-hide-scroll',
-  wrapperClassName: 'frs-hide-scroll-wrapper',
-  scrollWidth     : void 0,
-  styleElement    : document.getElementsByTagName('style')[0] || createNewElement('style', document.head)
-};
+var CONFIG_OLD;
 
-window.addEventListener('load', refreshScrollWidth);
+window.FRSHideScrollBar             = window.FRSHideScrollBar || {};
+FRSHideScrollBar.refreshScrollWidth = refreshScrollWidth;
+FRSHideScrollBar.createNewChild     = createNewChild;
+FRSHideScrollBar.updateStyles       = updateStyles;
+FRSHideScrollBar.config             = FRSHideScrollBar.config || {};
+
+FRSHideScrollBar.config.className        = FRSHideScrollBar.config.className || 'frs-hide-scroll';
+FRSHideScrollBar.config.wrapperClassName = FRSHideScrollBar.config.wrapperClassName || 'frs-hide-scroll-wrapper';
+FRSHideScrollBar.config.styleElement     = FRSHideScrollBar.config.styleElement ||
+                                           document.getElementsByTagName('style')[0] ||
+                                           createNewChild('style', document.head);
+
+window.addEventListener('load', refreshScrollWidth, {passive: true});
+window.addEventListener('resize', refreshScrollWidth, {passive: true});
 
 //
 
-function FRSHideScrollBar (_elements) {
-  _elements = _elements.length ? Array.prototype.slice.apply(_elements) : [_elements];
-
-  return _elements.map(function (_el) {
-    var children = Array.prototype.slice.apply(_el.children);
-    var inner    = createNewElement('div', _el);
-
-    _el.classList.add(FRSHideScrollBar.config.wrapperClassName);
-    inner.classList.add(FRSHideScrollBar.config.className);
-    children.forEach(function (_el) {
-      inner.appendChild(_el)
-    });
-  });
-}
-
 function refreshScrollWidth () {
-  _el                  = createNewElement('div', document.body);
+  _el                  = createNewChild('div', document.body);
   _el.style.position   = 'absolute';
   _el.style['z-index'] = '-1';
   _el.style.width      = '100px';
@@ -39,18 +30,36 @@ function refreshScrollWidth () {
 
   if (scrollWidth !== FRSHideScrollBar.config.scrollWidth) {
     FRSHideScrollBar.config.scrollWidth = scrollWidth;
-    updateStyles(FRSHideScrollBar.config.styleElement);
+    updateStyles();
   }
 
   return _el.scrollWidth;
 }
 
-function createNewElement (_tagName, _parent) {
+function createNewChild (_tagName, _parent) {
   return _parent.appendChild(document.createElement(_tagName));
 }
 
-function updateStyles (_styleElement) {
-  _styleElement.innerText += '.' + FRSHideScrollBar.config.className + '{overflow:scroll;margin-right:-' +
-                             FRSHideScrollBar.config.scrollWidth + 'px;height:calc(100% + ' +
-                             FRSHideScrollBar.config.scrollWidth + 'px);}';
+function updateStyles (_styleElement, _cfgOld) {
+  _styleElement = _styleElement || FRSHideScrollBar.config.styleElement;
+  _cfgOld       = _cfgOld || CONFIG_OLD;
+
+  if (_cfgOld) {
+    var styleElementOld       = _cfgOld.styleElement;
+    var lio                   = styleElementOld.innerText.lastIndexOf('.' + _cfgOld.className +
+                                                                      '{margin-right:-');
+    styleElementOld.innerText = styleElementOld.innerText.substring(0, lio);
+  }
+
+  if (FRSHideScrollBar.config.scrollWidth === 0) {
+    return;
+  }
+
+  CONFIG_OLD = FRSHideScrollBar.config;
+  _styleElement.innerText += '.' + FRSHideScrollBar.config.className +
+                             '{margin-right:-' +
+                             (FRSHideScrollBar.config.scrollWidth + .5) + // additional 0.5px because of chrome
+                             // rounding bug
+                             'px;height:calc(100% + ' +
+                             FRSHideScrollBar.config.scrollWidth + 'px)}';
 }

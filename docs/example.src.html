@@ -15,10 +15,6 @@
     height: 100vh;
   }
 
-  .phone-wrapper-inner {
-    height: 100%;
-  }
-
   .frs-tc-item > header {
     display: flex;
     align-items: center;
@@ -45,6 +41,7 @@
 
   .example-mobile-body {
     padding: 40px 20px;
+    width: 120%;
     background: #fff;
   }
 
@@ -106,9 +103,9 @@
 </style>
 <main>
   <section class="example-section" id="1-example">
-    <header><h2>Try to scroll down phone screen</h2></header>
-    <article class="phone-wrapper">
-      <div class="phone-wrapper-inner">
+    <header><h2>Try to scroll the area below up & down or left & right</h2></header>
+    <article class="phone-wrapper frs-hide-scroll-wrapper">
+      <div class="frs-hide-scroll">
         <section>
           <header>
             <h4>Some heading</h4>
@@ -117,19 +114,23 @@
             <p>This is example article of yours, try scrolling up & down to see FRS-hide-scroll in action!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit felis mi, a aliquam erat ullamcorper ac. Fusce et elit
               pellentesque, sollicitudin ligula sollicitudin, bibendum nisl. Quisque fermentum nulla a velit pulvinar lacinia. Curabitur at nisi
-              fermentum, bibendum purus quis, ullamcorper tortor. Vivamus dapibus vitae augue non tempus. Quisque id porttitor neque. Ut vestibulum,
+              fermentum, bibendum purus quis, ullamcorper tortor. Vivamus dapibus vitae augue non tempus. Quisque id porttitor neque. Ut
+              vestibulum,
               urna gravida tempor blandit, purus odio mollis metus, in rutrum ante augue vitae neque. Curabitur eu interdum leo. Praesent nec arcu
-              neque. Maecenas vel tempor sem, at vehicula ligula. Aenean iaculis urna orci, dapibus vestibulum odio pulvinar eu. Nunc consectetur in
+              neque. Maecenas vel tempor sem, at vehicula ligula. Aenean iaculis urna orci, dapibus vestibulum odio pulvinar eu. Nunc consectetur
+              in
               tortor sit amet finibus. Morbi in suscipit augue, non vulputate ligula. Donec nec elit egestas, rutrum erat nec, feugiat elit.</p>
-            <p>Praesent pharetra posuere neque, id accumsan turpis. Ut pulvinar mattis quam. Ut et ullamcorper sem. Praesent massa dolor, dignissim
+            <p>Praesent pharetra posuere neque, id accumsan turpis. Ut pulvinar mattis quam. Ut et ullamcorper sem. Praesent massa dolor,
+              dignissim
               pulvinar blandit eget, facilisis nec felis. Sed maximus massa vitae augue consectetur, nec aliquam purus malesuada. Fusce elementum,
               sapien quis tincidunt interdum, lectus turpis suscipit eros, nec pharetra est diam quis urna. Morbi mollis semper tortor, sed rutrum
-              tortor posuere eget. Nam fringilla ligula eget lorem finibus, sit amet tristique tortor aliquet. Nullam sem ipsum, aliquam nec dictum
+              tortor posuere eget. Nam fringilla ligula eget lorem finibus, sit amet tristique tortor aliquet. Nullam sem ipsum, aliquam nec
+              dictum
               id, ultricies eget orci. Praesent non nulla vehicula, pharetra purus non, tristique augue. Sed pharetra sed nisl vitae efficitur.
               Suspendisse turpis risus, vestibulum a faucibus eget, gravida ut felis. Nam in odio ipsum. Pellentesque habitant morbi tristique
-              senectus et netus et malesuada fames ac turpis egestas. Aenean suscipit eget nisi mollis faucibus. Duis quis rutrum ipsum, eget cursus
+              senectus et netus et malesuada fames ac turpis egestas. Aenean suscipit eget nisi mollis faucibus. Duis quis rutrum ipsum, eget
+              cursus
               magna.</p>
-
           </div>
         </section>
         <section>
@@ -144,9 +145,5 @@
     </article>
   </section>
 </main>
-<script type="application/javascript">
-  new FRSHideScrollBar(document.querySelectorAll('.phone-wrapper-inner'));
-  //  new FRSTinyCarousel(document.querySelectorAll('.frs-tc-wrapper'));
-</script>
 </body>
 </html>

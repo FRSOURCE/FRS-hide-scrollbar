@@ -1,8 +1,8 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="/FRS-hide-scrollbar/FRS-hide-scrollbar.4505b8b4.js"></script>
-  <link rel="stylesheet" href="/FRS-hide-scrollbar/FRS-hide-scrollbar.7518e338.css">
+  <script src="/FRS-hide-scrollbar/FRS-hide-scrollbar.40dd5755.js"></script>
+  <link rel="stylesheet" href="/FRS-hide-scrollbar/FRS-hide-scrollbar.63dd496a.css">
 </head>
 <body>
 <style>.example-section {
@@ -13,10 +13,6 @@
 .phone-wrapper {
   width: 100vw;
   height: 100vh
-}
-
-.phone-wrapper-inner {
-  height: 100%
 }
 
 .frs-tc-item > header {
@@ -45,6 +41,7 @@
 
 .example-mobile-body {
   padding: 40px 20px;
+  width: 120%;
   background: #fff
 }
 
@@ -105,9 +102,9 @@
 }</style>
 <main>
   <section class="example-section" id="1-example">
-    <header><h2>Try to scroll down phone screen</h2></header>
-    <article class="phone-wrapper">
-      <div class="phone-wrapper-inner">
+    <header><h2>Try to scroll the area below up & down or left & right</h2></header>
+    <article class="phone-wrapper frs-hide-scroll-wrapper">
+      <div class="frs-hide-scroll">
         <section>
           <header><h4>Some heading</h4></header>
           <div class="example-mobile-body"><p>This is example article of yours, try scrolling up & down to see FRS-hide-scroll in action!</p>
@@ -134,6 +131,5 @@
     </article>
   </section>
 </main>
-<script type="application/javascript">new FRSHideScrollBar(document.querySelectorAll('.phone-wrapper-inner'));</script>
 </body>
 </html>
