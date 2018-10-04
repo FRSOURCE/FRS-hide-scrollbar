@@ -47,8 +47,7 @@ parcelRequire = function (e, r, n, t) {
   }
   return u
 }({
-  'T3sQ'                                                                                         : [function (require,
-    module, exports) {
+  'yrAj'        : [function (require, module, exports) {
     var e, l = exports = exports || {};
 
     function t () {
@@ -82,15 +81,10 @@ parcelRequire = function (e, r, n, t) {
                                                                                                                                                                                                               i('style',
                                                                                                                                                                                                                 document.head), window.addEventListener(
       'load', t, {passive: !0}), window.addEventListener('resize', t, {passive: !0});
-  }, {}], 'QyBK'                                                                                 : [function (require,
-    module, exports) {
+  }, {}], 'H3yJ': [function (require, module, exports) {
 
-  }, {}], 'h4iN'                                                                                 : [function (require,
-    module, exports) {
+  }, {}], 'yKCJ': [function (require, module, exports) {
     require('./scripts/FRSHideScrollbar.js'), require('./styles/FRSHideScrollbar.scss');
-  }, {'./scripts/FRSHideScrollbar.js': 'T3sQ', './styles/FRSHideScrollbar.scss': 'QyBK'}], 'Focm': [function (require,
-    module, exports) {
-    require('./src/FRS-hide-scrollbar.js');
-  }, {'./src/FRS-hide-scrollbar.js': 'h4iN'}]
-}, {}, ['Focm'], null);
-//# sourceMappingURL=/FRS-hide-scrollbar.map
+  }, {'./scripts/FRSHideScrollbar.js': 'yrAj', './styles/FRSHideScrollbar.scss': 'H3yJ'}]
+}, {}, ['yKCJ'], null);
+//# sourceMappingURL=/FRS-hide-scrollbar/FRS-hide-scrollbar.cd7dc92c.map

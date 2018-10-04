@@ -1,6 +1,6 @@
 var CONFIG_OLD;
+var FRSHideScrollBar = exports = exports || {};
 
-window.FRSHideScrollBar             = window.FRSHideScrollBar || {};
 FRSHideScrollBar.refreshScrollWidth = refreshScrollWidth;
 FRSHideScrollBar.createNewChild     = createNewChild;
 FRSHideScrollBar.updateStyles       = updateStyles;
