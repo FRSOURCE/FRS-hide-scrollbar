@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <script src="/FRS-hide-scrollbar/index-es.bac47773.js"></script>
+    <link href="/FRS-hide-scrollbar/FRS-hide-scrollbar.eda05a78.css" rel="stylesheet">
+</head>
+<body>
+<style>.example-section {
+    margin-bottom: 4vw;
+    overflow: hidden
+}
+
+.phone-wrapper {
+    width: 100vw;
+    height: 100vh
+}
+
+.frs-tc-item > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 1.25rem;
+    line-height: 1.4em;
+    color: #fff;
+    background: #6495ed
+}
+
+.frs-tc-item > header h4 {
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+    flex-basis: 100%;
+    font-weight: 400
+}
+
+.frs-tc-item > header a {
+    padding: 0 10px;
+    font-size: .75em
+}
+
+.example-mobile-body {
+    padding: 40px 20px;
+    width: 120%;
+    background: #fff
+}
+
+.example-mobile-body p {
+    margin-bottom: 2em
+}
+
+.simple-gallery img {
+    display: block;
+    width: 100%
+}
+
+.simple-gallery p {
+    text-align: center
+}
+
+@media (min-device-width: 800px) {
+    .phone-wrapper {
+        position: relative;
+        box-sizing: border-box;
+        width: 360px;
+        height: 680px;
+        border-color: #323232;
+        border-style: solid;
+        border-width: 32px 13px 80px;
+        background: #efefef;
+        border-radius: 20px
+    }
+
+    .phone-wrapper:before {
+        margin-top: -24px;
+        margin-left: 10px;
+        margin-bottom: 8px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 7px solid #3a4f1a;
+        background: #5f6f2a
+    }
+
+    .phone-wrapper:after, .phone-wrapper:before {
+        box-sizing: border-box;
+        content: "";
+        display: block
+    }
+
+    .phone-wrapper:after {
+        position: absolute;
+        bottom: -70px;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #444;
+        border: 2px solid #666;
+        transform: translateX(-50%)
+    }
+}</style>
+<main>
+    <section class="example-section" id="1-example">
+        <header><h2>Try to scroll the area below up & down or left & right</h2></header>
+        <article class="phone-wrapper frs-hide-scroll-wrapper">
+            <div class="frs-hide-scroll">
+                <section>
+                    <header><h4>Some heading</h4></header>
+                    <div class="example-mobile-body"><p>This is example article of yours, try scrolling up & down to see
+                        FRS-hide-scroll in action!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit felis mi, a
+                            aliquam erat ullamcorper ac. Fusce et elit pellentesque, sollicitudin ligula sollicitudin,
+                            bibendum nisl. Quisque fermentum nulla a velit pulvinar lacinia. Curabitur at nisi
+                            fermentum, bibendum purus quis, ullamcorper tortor. Vivamus dapibus vitae augue non tempus.
+                            Quisque id porttitor neque. Ut vestibulum, urna gravida tempor blandit, purus odio mollis
+                            metus, in rutrum ante augue vitae neque. Curabitur eu interdum leo. Praesent nec arcu neque.
+                            Maecenas vel tempor sem, at vehicula ligula. Aenean iaculis urna orci, dapibus vestibulum
+                            odio pulvinar eu. Nunc consectetur in tortor sit amet finibus. Morbi in suscipit augue, non
+                            vulputate ligula. Donec nec elit egestas, rutrum erat nec, feugiat elit.</p>
+                        <p>Praesent pharetra posuere neque, id accumsan turpis. Ut pulvinar mattis quam. Ut et
+                            ullamcorper sem. Praesent massa dolor, dignissim pulvinar blandit eget, facilisis nec felis.
+                            Sed maximus massa vitae augue consectetur, nec aliquam purus malesuada. Fusce elementum,
+                            sapien quis tincidunt interdum, lectus turpis suscipit eros, nec pharetra est diam quis
+                            urna. Morbi mollis semper tortor, sed rutrum tortor posuere eget. Nam fringilla ligula eget
+                            lorem finibus, sit amet tristique tortor aliquet. Nullam sem ipsum, aliquam nec dictum id,
+                            ultricies eget orci. Praesent non nulla vehicula, pharetra purus non, tristique augue. Sed
+                            pharetra sed nisl vitae efficitur. Suspendisse turpis risus, vestibulum a faucibus eget,
+                            gravida ut felis. Nam in odio ipsum. Pellentesque habitant morbi tristique senectus et netus
+                            et malesuada fames ac turpis egestas. Aenean suscipit eget nisi mollis faucibus. Duis quis
+                            rutrum ipsum, eget cursus magna.</p></div>
+                </section>
+                <section>
+                    <header><h4>Some heading #2</h4></header>
+                    <div class="example-mobile-body"><p>Pretty neat, isn't it?</p></div>
+                </section>
+            </div>
+        </article>
+    </section>
+</main>
+</body>
+</html>

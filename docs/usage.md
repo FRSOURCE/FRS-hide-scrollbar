@@ -7,18 +7,27 @@ Simply require the package:
 require('frs-hide-scrollbar');
 ```
 
-or include it locally:
+ES6 import it:
 
-_**Important** - FRS-hide-scrollbar comes shipped in 2 versions: bundler-supportive and vanilla (without any additional bundler-based code), please use the file which fits better your use-case._
+```javascript
+import * as FRSHideScrollbar from 'frs-hide-scrollbar';
+```
+
+include it locally:
+
+_**Important** - FRS-hide-scrollbar comes shipped in 2 versions: bundler-supportive (dist/FRS-hide-scrollbar.js) and vanilla (without any additional bundler-based code - dist/FRS-hide-scrollbar.browser.js), please use the file which fits better your use-case._
 
 ```html
-<script type="text/javascript" src="node_modules/frs-hide-scrollbar/dist/FRS-hide-scrollbar.vanilla.js"></script>
+<link rel="stylesheet" href="node_modules/frs-hide-scrollbar/dist/FRS-hide-scrollbar.css">
+<script type="text/javascript" src="node_modules/frs-hide-scrollbar/dist/FRS-hide-scrollbar.browser.js"></script>
 ```
 
 or from [unpkg](https://unpkg.com/#/) [CDN](https://en.wikipedia.org/wiki/Content_delivery_network):
 
 ```html
-<script type="text/javascript" src="https://unpkg.com/frs-hide-scrollbar"></script>
+<link rel="stylesheet" href="https://unpkg.com/frs-hide-scrollbar/dist/FRS-hide-scrollbar.css">
+<script type="text/javascript" src="https://unpkg.com/frs-hide-scrollbar/dist/FRS-hide-scrollbar.browser.js"></script>
+
 ```
 
 To hide element scrollbar just add `frs-hide-scroll` class on it and `frs-hide-scroll-wrapper` on it`s container, like this:
@@ -52,7 +61,6 @@ window.FRSHideScrollBar = {
 };
 </script>
 
-<!-- FRS-hide-scrollbar needs to be added AFTER custom configuration -->
-<script type="text/javascript" src="https://unpkg.com/frs-hide-scrollbar"></script>
-```
+<!-- Some script loading FRS-hide-scrollbar package -->
 
+```

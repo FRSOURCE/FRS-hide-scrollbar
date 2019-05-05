@@ -1,1 +1,1 @@
-require('./src/FRS-hide-scrollbar.js');
+module.exports = require('./dist/FRS-hide-scrollbar')
