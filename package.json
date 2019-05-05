@@ -6,7 +6,7 @@
   "esnext": "index-es.js",
   "scripts": {
     "test": "tap --node-arg=--experimental-modules ./src/scripts/*.spec.js",
-    "test-coverage": "yarn test && tap --cov --nyc-arg=--exclude=**/*.spec.js --nyc-arg=--require=esm --nyc-arg=--extension=.mjs --coverage-report=html --100",
+    "test-coverage": "yarn test && tap --cov --nyc-arg=--require=esm --nyc-arg=--extension=.mjs --coverage-report=html --100",
     "prestart": "yarn clean",
     "start": "parcel watch",
     "prebuild": "yarn clean",
@@ -47,6 +47,11 @@
     "yarn.lock"
   ],
   "unpkg": "dist/FRS-hide-scrollbar.browser.js",
+  "nyc": {
+    "exclude": [
+      "**/*.spec.js"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/FRSource/FRS-hide-scrollbar/issues"
   },
