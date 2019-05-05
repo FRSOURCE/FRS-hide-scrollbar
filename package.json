@@ -1,6 +1,6 @@
 {
   "name": "frs-hide-scrollbar",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Easy & lightweight solution for cross-browser scrollbar hiding",
   "main": "index.js",
   "esnext": "index-es.js",
@@ -16,7 +16,7 @@
     "build:browser": "node ./scripts/replace \"let FRSHideScrollbar =\" \"let FRSHideScrollbar = window['FRSHideScrollbar'] =\" src/scripts/FRSHideScrollbar.mjs | node ./scripts/replace \"export default FRSHideScrollbar;\" \"\" | google-closure-compiler  --compilationLevel ADVANCED --isolation_mode IIFE --assume_function_wrapper --js_output_file dist/FRS-hide-scrollbar.browser.js",
     "build:example": "parcel build docs/example.src.html -d docs --public-url /FRS-hide-scrollbar -o example.dist.html -o FRS-hide-scrollbar",
     "prepublishOnly": "yarn test-coverage && yarn build",
-    "postpublish": "git add dist && git push origin --all && git push origin --tags",
+    "postpublish": "git add dist && git add docs",
     "predevExample": "yarn clean",
     "devExample": "parcel docs/example.src.html -d docs -o example.dist.html",
     "clean": "rimraf dist/**/* && rimraf docs/*.dist.html && rimraf docs/report.html && rimraf docs/*.{js,css,map} && rimraf coverage",
@@ -46,7 +46,7 @@
     "LICENSE",
     "yarn.lock"
   ],
-  "unpkg": "dist/FRS-hide-scrollbar.vanilla.js",
+  "unpkg": "dist/FRS-hide-scrollbar.browser.js",
   "bugs": {
     "url": "https://github.com/FRSource/FRS-hide-scrollbar/issues"
   },
