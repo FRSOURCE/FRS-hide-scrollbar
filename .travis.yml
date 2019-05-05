@@ -1,0 +1,16 @@
+dist: trusty
+sudo: required
+language: node_js
+cache: yarn
+matrix:
+  include:
+    - name: "Unit tests"
+      script: yarn test
+      node_js:
+        - "node"
+        - "lts/*"
+    - name: "Coverage"
+      script: yarn test-coverage
+      node_js:
+        - "node"
+        - "lts/*"
