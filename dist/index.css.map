@@ -1,0 +1,1 @@
+{"version":3,"sources":["src\\styles\\FRSHideScrollbar.scss"],"names":[],"mappings":"AAAA,yBACE,eAAA,CACA,YAGF,iBACE","file":"index.css","sourceRoot":"..","sourcesContent":[".frs-hide-scroll-wrapper {\r\n  overflow: hidden;\r\n  height: 100%;\r\n}\r\n\r\n.frs-hide-scroll {\r\n  overflow: scroll;\r\n}"]}
