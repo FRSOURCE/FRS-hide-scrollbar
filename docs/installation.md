@@ -20,4 +20,4 @@ or download it zipped:
 or just use CDN-hosted file (details in next step - usage).
 
 
-#### That's it! You've successfully added FRS-hide-scrollbar package into your project. [Let's see how to use it!](/FRS-hide-scrollbar/example)
+#### That's it! You've successfully added FRS-hide-scrollbar package into your project. [Let's see how to use it!](/FRS-hide-scrollbar/usage)
