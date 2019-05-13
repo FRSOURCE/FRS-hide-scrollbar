@@ -14,7 +14,7 @@
     "postbuild": "yarn docs",
     "build:bundle": "parcel build index-es.js index.scss -o FRS-hide-scrollbar --detailed-report",
     "build:browser": "node ./scripts/replace \"let FRSHideScrollbar =\" \"let FRSHideScrollbar = window['FRSHideScrollbar'] =\" src/scripts/FRSHideScrollbar.mjs | node ./scripts/replace \"export default FRSHideScrollbar;\" \"\" | google-closure-compiler  --compilationLevel ADVANCED --isolation_mode IIFE --assume_function_wrapper --js_output_file dist/FRS-hide-scrollbar.browser.js",
-    "build:example": "parcel build docs/example.src.html -d docs --public-url /FRS-hide-scrollbar -o example.dist.html -o FRS-hide-scrollbar",
+    "build:example": "parcel build docs/example.src.html -d docs --public-url /FRS-hide-scrollbar -o example.dist.html",
     "prepublishOnly": "yarn test-coverage && yarn build",
     "postpublish": "git add dist && git add docs",
     "predevExample": "yarn clean",
