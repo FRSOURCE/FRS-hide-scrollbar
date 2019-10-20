@@ -59,7 +59,7 @@
     "@babel/core": "^7.0.0-0",
     "@babel/preset-env": "^7.4.4",
     "esm": "^3.0.84",
-    "google-closure-compiler": "^20190513.0.0",
+    "google-closure-compiler": "^20190528.0.0",
     "jsdoc-to-markdown": "^5.0.0",
     "jsdom": "^15.0.0",
     "npm-run-all": "^4.1.3",
