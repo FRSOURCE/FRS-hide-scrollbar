@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/styles/FRSHideScrollbar.scss"],"names":[],"mappings":"AAAA,yBACE,eAAA,CACA,YAGF,iBACE,eAAA,CACA","file":"FRS-hide-scrollbar.db931ddc.css","sourceRoot":"","sourcesContent":[".frs-hide-scroll-wrapper {\n  overflow: hidden;\n  height: 100%;\n}\n\n.frs-hide-scroll {\n  overflow: scroll;\n  height: 100%;\n}"]}
