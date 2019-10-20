@@ -6,7 +6,8 @@
   "esnext": "index.mjs",
   "scripts": {
     "test": "tap --node-arg=--experimental-modules ./src/scripts/*.spec.test.js",
-    "test-coverage": "yarn test && tap --cov --nyc-arg=--require=esm --nyc-arg=--extension=.mjs --coverage-report=html --100",
+    "test-coverage": "yarn test && tap --100 --coverage-report=html",
+    "test-coverage:ci": "yarn test && tap --100 --coverage-report=text-lcov | coveralls",
     "prestart": "yarn clean",
     "start": "parcel watch index.mjs index.scss -o FRS-hide-scrollbar",
     "prebuild": "yarn clean",
@@ -53,6 +54,7 @@
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
     "@babel/preset-env": "^7.4.4",
+    "coveralls": "^3.0.7",
     "esm": "^3.0.84",
     "google-closure-compiler": "^20190929.0.0",
     "jsdoc-to-markdown": "^5.0.0",

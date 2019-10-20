@@ -10,7 +10,7 @@ matrix:
         - "node"
         - "lts/*"
     - name: "Coverage"
-      script: yarn test-coverage
+      script: yarn test-coverage:ci
       node_js:
         - "node"
         - "lts/*"
