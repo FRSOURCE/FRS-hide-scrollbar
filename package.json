@@ -5,7 +5,7 @@
   "main": "index.js",
   "esnext": "index.mjs",
   "scripts": {
-    "test": "tap --node-arg=--experimental-modules ./src/scripts/*.spec.js",
+    "test": "tap --node-arg=--experimental-modules ./src/scripts/*.spec.test.js",
     "test-coverage": "yarn test && tap --cov --nyc-arg=--require=esm --nyc-arg=--extension=.mjs --coverage-report=html --100",
     "prestart": "yarn clean",
     "start": "parcel watch index.mjs index.scss -o FRS-hide-scrollbar",
@@ -47,11 +47,6 @@
     "yarn.lock"
   ],
   "unpkg": "dist/FRS-hide-scrollbar.browser.js",
-  "nyc": {
-    "exclude": [
-      "**/*.spec.js"
-    ]
-  },
   "bugs": {
     "url": "https://github.com/FRSource/FRS-hide-scrollbar/issues"
   },
@@ -59,7 +54,7 @@
     "@babel/core": "^7.0.0-0",
     "@babel/preset-env": "^7.4.4",
     "esm": "^3.0.84",
-    "google-closure-compiler": "^20190528.0.0",
+    "google-closure-compiler": "^20190929.0.0",
     "jsdoc-to-markdown": "^5.0.0",
     "jsdom": "^15.0.0",
     "npm-run-all": "^4.1.3",
