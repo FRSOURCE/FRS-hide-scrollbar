@@ -1,26 +1,26 @@
 const tap = require('tap')
 const jsdom = require('jsdom')
 const {JSDOM} = jsdom
-let window, document, FRSHideScrollBar
+let window, document, FRSHideScrollbar
 let CACHE_BUSTER = -1
 
 tap.beforeEach(async () => await onBeforeEach())
 
 tap.test('without <style> element in DOM new one', (t) => {
-  FRSHideScrollBar.refreshScrollWidth()
+  FRSHideScrollbar.refreshScrollWidth()
 
   const styleEls = document.getElementsByTagName('style')
 
   t.is(styleEls.length, 1, 'should be created')
-  t.is(styleEls[0], FRSHideScrollBar.config.styleElement, 'should be visible under config.styleElement')
+  t.is(styleEls[0], FRSHideScrollbar.config.styleElement, 'should be visible under config.styleElement')
 
   t.end()
 })
 
 tap.test('window already loaded', {timeout: 3000}, (t) => {
-  t.isNot(typeof FRSHideScrollBar.config.scrollWidth, 'undefined',
+  t.isNot(typeof FRSHideScrollbar.config.scrollWidth, 'undefined',
     'scrollWidth should be recalculated (will NOT be undef)')
-  t.is(FRSHideScrollBar.refreshScrollWidth(), FRSHideScrollBar.config.scrollWidth,
+  t.is(FRSHideScrollbar.refreshScrollWidth(), FRSHideScrollbar.config.scrollWidth,
     'scrollWidth should be the same as refreshScrollWidth return value')
   t.end()
 })
@@ -34,7 +34,7 @@ tap.test('autoInit = false', async (t) => {
     }
   })
 
-  t.is(FRSHideScrollBar.config.styleElement.innerHTML, '', 'styleElement should be empty')
+  t.is(FRSHideScrollbar.config.styleElement.innerHTML, '', 'styleElement should be empty')
 
   t.end()
 })
@@ -42,31 +42,31 @@ tap.test('autoInit = false', async (t) => {
 tap.test('onload', {timeout: 3000}, async (t) => {
   await onBeforeEach(void 0, true)
 
-  t.isNot(typeof FRSHideScrollBar.config.scrollWidth, 'undefined',
+  t.isNot(typeof FRSHideScrollbar.config.scrollWidth, 'undefined',
     'scrollWidth should be recalculated (will NOT be undef)')
-  t.is(FRSHideScrollBar.refreshScrollWidth(), FRSHideScrollBar.config.scrollWidth,
+  t.is(FRSHideScrollbar.refreshScrollWidth(), FRSHideScrollbar.config.scrollWidth,
     'scrollWidth should be the same as refreshScrollWidth return value')
   t.end()
 })
 
 tap.test('when loaded after DOM init', {timeout: 3000}, async (t) => {
-  t.isNot(typeof FRSHideScrollBar.config.scrollWidth, 'undefined',
+  t.isNot(typeof FRSHideScrollbar.config.scrollWidth, 'undefined',
     'scrollWidth should be recalculated (will NOT be undef)')
-  t.is(FRSHideScrollBar.refreshScrollWidth(), FRSHideScrollBar.config.scrollWidth,
+  t.is(FRSHideScrollbar.refreshScrollWidth(), FRSHideScrollbar.config.scrollWidth,
     'scrollWidth should be the same as refreshScrollWidth return value')
   t.end()
 })
 
 tap.test('changing option className', (t) => {
   const styleEl = document.getElementsByTagName('style')[0]
-  t.is(styleEl, FRSHideScrollBar.config.styleElement, 'styleEl should be visible under config.styleElement')
+  t.is(styleEl, FRSHideScrollbar.config.styleElement, 'styleEl should be visible under config.styleElement')
 
-  const oldClassName = FRSHideScrollBar.config.className
+  const oldClassName = FRSHideScrollbar.config.className
   const newClassName = 'new-class-name'
   const styleContentExpected = styleEl.innerHTML.replace(new RegExp(oldClassName, 'g'), newClassName)
 
-  FRSHideScrollBar.config.className = newClassName
-  FRSHideScrollBar.updateStyles()
+  FRSHideScrollbar.config.className = newClassName
+  FRSHideScrollbar.updateStyles()
 
   t.is(styleEl.innerHTML, styleContentExpected, 'changes style content as well')
 
@@ -80,34 +80,34 @@ tap.test('updateStyles', async (t) => {
     ct.beforeEach(onBeforeEach)
 
     ct.test('when scrollWidth hasn\'t changed', (cct) => {
-      FRSHideScrollBar.updateStyles = () => cct.fail('shouldn\'t be called')
-      FRSHideScrollBar.refreshScrollWidth()
+      FRSHideScrollbar.updateStyles = () => cct.fail('shouldn\'t be called')
+      FRSHideScrollbar.refreshScrollWidth()
 
       cct.end()
     })
 
     ct.test('when scrollWidth has changed', (cct) => {
-      const originalUpdateStyles = FRSHideScrollBar.updateStyles
+      const originalUpdateStyles = FRSHideScrollbar.updateStyles
 
-      FRSHideScrollBar.updateStyles = () => cct.pass('should be called')
-      FRSHideScrollBar.config.scrollWidth += 1
-      FRSHideScrollBar.refreshScrollWidth()
+      FRSHideScrollbar.updateStyles = () => cct.pass('should be called')
+      FRSHideScrollbar.config.scrollWidth += 1
+      FRSHideScrollbar.refreshScrollWidth()
 
-      const styleEl = FRSHideScrollBar.config.styleElement
+      const styleEl = FRSHideScrollbar.config.styleElement
       const styleContentExpected = styleEl.innerHTML
 
-      FRSHideScrollBar.updateStyles = originalUpdateStyles
+      FRSHideScrollbar.updateStyles = originalUpdateStyles
 
-      FRSHideScrollBar.config.scrollWidth = 12 // need to mock, so styles are appended to _styleElement
-      FRSHideScrollBar.updateStyles()
-      FRSHideScrollBar.refreshScrollWidth()
+      FRSHideScrollbar.config.scrollWidth = 12 // need to mock, so styles are appended to _styleElement
+      FRSHideScrollbar.updateStyles()
+      FRSHideScrollbar.refreshScrollWidth()
 
       styleEl.innerHTML = styleEl.innerHTML.replace(
-        new RegExp('margin-right:-' + (FRSHideScrollBar.config.scrollWidth + .5) + 'px;'),
-        new RegExp('margin-right:-' + (FRSHideScrollBar.config.scrollWidth + 1.5) + 'px;')
+        new RegExp('margin-right:-' + (FRSHideScrollbar.config.scrollWidth + .5) + 'px;'),
+        new RegExp('margin-right:-' + (FRSHideScrollbar.config.scrollWidth + 1.5) + 'px;')
       )
-      FRSHideScrollBar.config.scrollWidth += 1
-      FRSHideScrollBar.refreshScrollWidth()
+      FRSHideScrollbar.config.scrollWidth += 1
+      FRSHideScrollbar.refreshScrollWidth()
 
       cct.is(styleEl.innerHTML, styleContentExpected, 'changes style content as well')
 
@@ -121,16 +121,14 @@ tap.test('updateStyles', async (t) => {
 })
 
 async function onBeforeEach (windowOptions = undefined, mimicNotLoadedWindow = false) {
-  ({window, document, FRSHideScrollBar} = await initializeModuleInDOM(`./FRSHideScrollbar.mjs?v=${++CACHE_BUSTER}`,
+  ({window, document, FRSHideScrollbar} = await initializeModuleInDOM(`./FRSHideScrollbar.mjs?v=${++CACHE_BUSTER}`,
     windowOptions, mimicNotLoadedWindow))
 
-  FRSHideScrollBar = FRSHideScrollBar.default
-  FRSHideScrollBar.cache = CACHE_BUSTER
+  FRSHideScrollbar.cache = CACHE_BUSTER
 }
 
-function initializeModuleInDOM (module, windowOptions = undefined, mimicNotLoadedWindow = false) {
+async function initializeModuleInDOM (module, windowOptions = undefined, mimicNotLoadedWindow = false) {
   const {window} = new JSDOM('')
-  let resultPromise = Promise.resolve()
 
   global.window = window
   global.document = window.document
@@ -144,7 +142,7 @@ function initializeModuleInDOM (module, windowOptions = undefined, mimicNotLoade
     })
   } else {
     if (!window.document.readyState || window.document.readyState === 'loading') {
-      resultPromise = new Promise((resolve) => {
+      await new Promise((resolve) => {
         window.addEventListener('load', resolve, {passive: true})
       })
 
@@ -155,38 +153,32 @@ function initializeModuleInDOM (module, windowOptions = undefined, mimicNotLoade
     Object.assign(window, windowOptions)
   }
 
-  return resultPromise.then(() => new Promise(resolve => {
-      import(module)
-        .then(moduleObj => {
-            if (mimicNotLoadedWindow) {
-              Object.defineProperty(window.document, 'readyState', {
-                get () {
-                  return 'complete'
-                }
-              })
-            }
+  const {FRSHideScrollbar} = await import(module)
+  if (mimicNotLoadedWindow) {
+    Object.defineProperty(window.document, 'readyState', {
+      get () { return 'complete' }
+    })
+  }
 
-            const resolver = () => resolve({
-              window: window,
-              FRSHideScrollBar: moduleObj,
-              document: window.document
-            })
+  return new Promise(resolve => {
+    const resolver = () => resolve({
+      window,
+      FRSHideScrollbar,
+      document: window.document
+    })
 
-            if (!window.document.readyState || window.document.readyState === 'loading') {
-              window.addEventListener(
-                'load',
-                resolver,
-                {passive: true}
-              )
-            } else {
-              resolver()
-            }
-
-            if (mimicNotLoadedWindow) {
-              window.dispatchEvent(new window.Event('load'))
-            }
-          }
-        )
+    if (!window.document.readyState || window.document.readyState === 'loading') {
+      window.addEventListener(
+        'load',
+        resolver,
+        {passive: true}
+      )
+    } else {
+      resolver()
     }
-  ))
+
+    if (mimicNotLoadedWindow) {
+      window.dispatchEvent(new window.Event('load'))
+    }
+  });
 }

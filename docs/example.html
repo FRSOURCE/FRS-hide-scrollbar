@@ -3,9 +3,9 @@
   <title>FRS-hide-scrollbar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--suppress HtmlUnknownTarget -->
-  <script src="../index.mjs"></script>
+  <script src="./FRS-hide-scrollbar.umd.js"></script>
   <!--suppress HtmlUnknownTarget -->
-  <link href="../index.scss" rel="stylesheet"/>
+  <link href="./FRS-hide-scrollbar.css" rel="stylesheet"/>
 </head>
 <body>
 <style>
@@ -33,7 +33,7 @@
   .frs-tc-item > header h4 {
     display: inline-block;
     margin: 0;
-    padding: 0 10px;
+    padding: 0 20px;
     flex-basis: 100%;
     font-weight: normal;
   }
@@ -110,7 +110,7 @@
     <header><h2>Try to scroll the area below up & down or left & right</h2></header>
     <article class="phone-wrapper frs-hide-scroll-wrapper">
       <div class="frs-hide-scroll">
-        <section>
+        <section class="frs-tc-item">
           <header>
             <h4>Some heading</h4>
           </header>
@@ -137,7 +137,7 @@
               magna.</p>
           </div>
         </section>
-        <section>
+        <section class="frs-tc-item">
           <header>
             <h4>Some heading #2</h4>
           </header>
