@@ -7334,17 +7334,10 @@ source-map-support@^0.4.15:
   dependencies:
     source-map "^0.5.6"
 
-source-map-support@^0.5.11, source-map-support@^0.5.6, source-map-support@~0.5.10, source-map-support@~0.5.12:
-  version "0.5.13"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.13.tgz#31b24a9c2e73c2de85066c0feb7d44767ed52932"
-  integrity sha512-SHSKFHadjVA5oR4PPqhtAVdcBWwRYVd6g6cAXnIbRiIwc2EhPrTuKUBdSLvlEKyIP3GCf89fltvcZiP9MMFA1w==
-  dependencies:
-    buffer-from "^1.0.0"
-    source-map "^0.6.0"
-
-"source-map-support@github:tapjs/node-source-map-support#node-header-length-change":
-  version "0.5.13"
-  resolved "https://codeload.github.com/tapjs/node-source-map-support/tar.gz/b2e96dd5c02f70a62f06ca2eea7f344bf9f825c8"
+source-map-support@^0.5.11, source-map-support@^0.5.16, source-map-support@^0.5.6, source-map-support@~0.5.10, source-map-support@~0.5.12:
+  version "0.5.16"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.16.tgz#0ae069e7fe3ba7538c64c98515e35339eac5a042"
+  integrity sha512-efyLRJDr68D9hBBNIPWFjhpFzURh+KJykQwvMyW5UiZzYwoF6l4YMMDIJJEyFWxWCqfyxLzz6tSfUFR+kXXsVQ==
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
@@ -7795,9 +7788,9 @@ tap-yaml@^1.0.0:
     yaml "^1.5.0"
 
 tap@^14.1.11:
-  version "14.7.2"
-  resolved "https://registry.yarnpkg.com/tap/-/tap-14.7.2.tgz#e1002398fa7d2d8893e792131efc28eeb94fd33f"
-  integrity sha512-JbqhvKsmnhe2HJjCu1DBMcFdlLfljDRuyqRiAv7If0QAXjJCvbYlEDIzakErQnitjJChMn9U+w5Ir2wsPxgv8A==
+  version "14.9.1"
+  resolved "https://registry.yarnpkg.com/tap/-/tap-14.9.1.tgz#fd4213a713176e3b92d1c322552ca18f0700bdbc"
+  integrity sha512-QIN6WPtrBcMf9k5U/rl1WTaclN4TY/YZnCIjsF9u6KEVwYQ6BNBs6Rkxb6Z9p3bl2lPYFKu5qHdTnwqaZKIwLQ==
   dependencies:
     async-hook-domain "^1.1.2"
     bind-obj-methods "^2.0.0"
@@ -7827,7 +7820,7 @@ tap@^14.1.11:
     react "^16.9.0"
     rimraf "^2.7.1"
     signal-exit "^3.0.0"
-    source-map-support "github:tapjs/node-source-map-support#node-header-length-change"
+    source-map-support "^0.5.16"
     stack-utils "^1.0.2"
     tap-mocha-reporter "^5.0.0"
     tap-parser "^10.0.1"
