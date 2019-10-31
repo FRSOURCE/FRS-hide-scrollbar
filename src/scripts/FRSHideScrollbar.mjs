@@ -1,8 +1,6 @@
-let FRSHideScrollbar = window.FRSHideScrollbar || {}
+export const FRSHideScrollbar = window.FRSHideScrollbar || {}
 const CONFIG = FRSHideScrollbar.config = FRSHideScrollbar.config || {}
 let CONFIG_OLD
-
-export default FRSHideScrollbar
 
 FRSHideScrollbar.refreshScrollWidth = refreshScrollWidth
 FRSHideScrollbar.createNewChild = createNewChild
