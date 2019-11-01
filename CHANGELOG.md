@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.1](https://github.com/FRSource/FRS-hide-scrollbar/compare/v0.4.0...v0.4.1) (2019-11-01)
+
 ## [0.4.0](https://github.com/FRSource/FRS-hide-scrollbar/compare/v0.3.0...v0.4.0) (2019-10-31)
 
 
