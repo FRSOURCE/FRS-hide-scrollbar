@@ -1,4 +1,5 @@
 # Usage
+
 *[Back to main menu](/FRS-hide-scrollbar)*
 
 Simply require the package:
@@ -10,12 +11,12 @@ require('frs-hide-scrollbar');
 ES6 import it:
 
 ```javascript
-import * as FRSHideScrollbar from 'frs-hide-scrollbar';
+import { FRSHideScrollbar } from 'frs-hide-scrollbar';
 ```
 
 include it locally:
 
-_**Important** - FRS-hide-scrollbar comes shipped in 2 versions: bundler-supportive (dist/FRS-hide-scrollbar.js) and vanilla (without any additional bundler-based code - dist/FRS-hide-scrollbar.browser.js), please use the file which fits better your use-case._
+>**Important** - FRS-hide-scrollbar comes shipped in 2 versions: bundler-supportive (dist/FRS-hide-scrollbar.js) and vanilla (without any additional bundler-based code - dist/FRS-hide-scrollbar.browser.js), please use the file which fits better your use-case.
 
 ```html
 <link rel="stylesheet" href="node_modules/frs-hide-scrollbar/dist/FRS-hide-scrollbar.css">
@@ -44,8 +45,7 @@ And that's it! Now FRSHideScrollbar library will detect if hiding of a scrollbar
 
 To see more real-life usage example check out out [example page](/FRS-hide-scrollbar/example).
 
-#### Note
-There is possibility to change class names (and other options - see example below) to custom ones if needed. Simply add proper configuration block **before** loading of `frs-hide-scrollbar` code:
+> *Note:* There is possibility to change class names (and other options - see example below) to custom ones if needed. Simply add proper configuration block **before** loading of `frs-hide-scrollbar` code:
 
 ```html
 <script>
