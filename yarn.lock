@@ -2049,6 +2049,11 @@ detect-newline@3.0.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.0.0.tgz#8ae477c089e51872c264531cd6547719c0b86b2f"
   integrity sha512-JAP22dVPAqvhdRFFxK1G5GViIokyUn0UWXRNW0ztK96fsqi9cuM8w8ESbSk+T2w5OVorcMcL6m7yUg1RrX+2CA==
 
+diff-frag@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/diff-frag/-/diff-frag-1.0.1.tgz#a7bb51789743e8c0b40e2509166bd155e5833826"
+  integrity sha512-6/v2PC/6UTGcWPPetb9acL8foberUg/CtPdALeJUdD1B/weHNvzftoo00gYznqHGRhHEbykUGzqfG9RWOSr5yw==
+
 diff@3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
@@ -7152,9 +7157,9 @@ tap-yaml@^1.0.0:
     yaml "^1.5.0"
 
 tap@^14.1.11:
-  version "14.9.2"
-  resolved "https://registry.yarnpkg.com/tap/-/tap-14.9.2.tgz#7a40fb7a0198156a97448187b2275de02ff71cf6"
-  integrity sha512-Fyy/sjsw4eb+Hnphin4oMtDtKxmrob/vrnaIDv/F3thFFQjQFqMg8xf45zRFGHxUfezlrO6KsH8TpWNlTDINfA==
+  version "14.10.1"
+  resolved "https://registry.yarnpkg.com/tap/-/tap-14.10.1.tgz#4e88d5964decec69236cb302e6ce4b2691d56fb7"
+  integrity sha512-GsjAtKf9WKe2Cj5/5OckVdwyz4kv4pjlidDPpNY32ikR6rkBnicU/gxwckXvV/pQ5uTDx+od6XqmVAB7ityXWg==
   dependencies:
     async-hook-domain "^1.1.2"
     bind-obj-methods "^2.0.0"
@@ -7189,8 +7194,8 @@ tap@^14.1.11:
     tap-mocha-reporter "^5.0.0"
     tap-parser "^10.0.1"
     tap-yaml "^1.0.0"
-    tcompare "^2.3.0"
-    treport "^0.4.2"
+    tcompare "^3.0.0"
+    treport "^0.5.0"
     trivial-deferred "^1.0.1"
     ts-node "^8.3.0"
     typescript "^3.6.3"
@@ -7234,10 +7239,12 @@ tcomb@^3.2.21:
   resolved "https://registry.yarnpkg.com/tcomb/-/tcomb-3.2.29.tgz#32404fe9456d90c2cf4798682d37439f1ccc386c"
   integrity sha512-di2Hd1DB2Zfw6StGv861JoAF5h/uQVu/QJp2g8KVbtfKnoHdBQl5M32YWq6mnSYBQ1vFFrns5B1haWJL7rKaOQ==
 
-tcompare@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/tcompare/-/tcompare-2.3.0.tgz#4f5ab56a4ab248ee2b8cc496e0675d47b4264fde"
-  integrity sha512-fAfA73uFtFGybWGt4+IYT6UPLYVZQ4NfsP+IXEZGY0vh8e2IF7LVKafcQNMRBLqP0wzEA65LM9Tqj+FSmO8GLw==
+tcompare@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/tcompare/-/tcompare-3.0.0.tgz#588a2af6d67bfb146fb21f343d6480dea7065455"
+  integrity sha512-lRD40wHaBoVvmcCT0L7qJmR+jBl1nVP0WxbMYyOtsFza+SXD9aiRVir9aWogdQwNzY6ZwOvwDp5vg3XWQGOIVQ==
+  dependencies:
+    diff-frag "^1.0.1"
 
 terser@^3.8.2:
   version "3.17.0"
@@ -7370,10 +7377,10 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
-treport@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/treport/-/treport-0.4.2.tgz#27574ef8e7b534bd1a4feedc75b6c19044117472"
-  integrity sha512-Po8pQ/rmu4lVNmZWBgqyiHoIWXFeWaMA3H/WoCKw+DiS0xFn43UYRH6hYnjmrWCp0rkLItELQP/maO9uHDe/7A==
+treport@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/treport/-/treport-0.5.0.tgz#5d22005db19cbf8ae2e53c39476f2942d3f23635"
+  integrity sha512-9ya/f8gd2HuuEpZYEujBACvx7DgGvxTdUK3RJjF3UsmhdfRv1zYJfci4r9qmRTB9t8W0vneDMFyL3V1mT8/LvQ==
   dependencies:
     cardinal "^2.1.1"
     chalk "^2.4.2"
