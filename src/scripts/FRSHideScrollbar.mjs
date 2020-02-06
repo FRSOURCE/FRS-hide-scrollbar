@@ -1,17 +1,19 @@
-export const FRSHideScrollbar = window.FRSHideScrollbar || {}
-const CONFIG = FRSHideScrollbar.config = FRSHideScrollbar.config || {}
-let CONFIG_OLD
-
-FRSHideScrollbar.refreshScrollWidth = refreshScrollWidth
-FRSHideScrollbar.createNewChild = createNewChild
-FRSHideScrollbar.updateStyles = updateStyles
-
-CONFIG.className = CONFIG.className || 'frs-hide-scroll'
-CONFIG.wrapperClassName = CONFIG.wrapperClassName || 'frs-hide-scroll-wrapper'
-CONFIG.styleElement = CONFIG.styleElement ||
-  document.getElementsByTagName('style')[0] ||
-  createNewChild('style', document.head)
-CONFIG.autoInit = CONFIG.autoInit === void 0 ? true : CONFIG.autoInit
+const windowFRSHideScrollbar = window.FRSHideScrollbar && window.FRSHideScrollbar.FRSHideScrollbar
+const CONFIG = Object.assign(
+  {
+    className: 'frs-hide-scroll',
+    wrapperClassName: 'frs-hide-scroll-wrapper',
+    autoInit: true
+  },
+  (windowFRSHideScrollbar && windowFRSHideScrollbar.config) || {}
+)
+export const FRSHideScrollbar = {
+  refreshScrollWidth,
+  update,
+  config: CONFIG
+}
+CONFIG.styleElement = CONFIG.styleElement || createNewChild('style', document.head)
+let CONFIG_OLD = { ...CONFIG }
 
 if (CONFIG.autoInit) {
   initHandlers()
@@ -20,13 +22,14 @@ if (CONFIG.autoInit) {
 //
 
 function initHandlers () {
+  const refreshScrollWidth = function () { return FRSHideScrollbar.refreshScrollWidth() }
   if (!document.readyState || document.readyState === 'loading') {
-    window.addEventListener('load', refreshScrollWidth, {passive: true})
+    window.addEventListener('load', refreshScrollWidth, { passive: true })
   } else {
     refreshScrollWidth()
   }
 
-  window.addEventListener('resize', refreshScrollWidth, {passive: true})
+  window.addEventListener('resize', refreshScrollWidth, { passive: true })
 }
 
 function refreshScrollWidth () {
@@ -42,34 +45,41 @@ function refreshScrollWidth () {
 
   if (scrollWidth !== CONFIG.scrollWidth) {
     CONFIG.scrollWidth = scrollWidth
-    updateStyles()
+    FRSHideScrollbar.update()
   }
-
-  return scrollWidth
 }
 
 function createNewChild (_tagName, _parent) {
   return _parent.appendChild(document.createElement(_tagName))
 }
 
-function updateStyles (_styleElement = CONFIG.styleElement, _cfgOld = CONFIG_OLD) {
-  if (_cfgOld) {
-    const styleElementOld = _cfgOld.styleElement
-    const lio = styleElementOld.innerText
-      .lastIndexOf('.' + _cfgOld.className + '{margin-right:-')
+function update (config = CONFIG, cfgOld = CONFIG_OLD) {
+  if (cfgOld) {
+    const styleElementOld = cfgOld.styleElement
+    const lio = styleElementOld.textContent
+      .lastIndexOf('.' + cfgOld.wrapperClassName + '{overflow:hidden;height:100%}')
 
-    styleElementOld.innerText = styleElementOld.innerText.substring(0, lio)
+    styleElementOld.textContent = styleElementOld.textContent.substring(0, lio)
   }
 
-  if (CONFIG.scrollWidth === 0) {
-    return
-  }
+  Object.assign(CONFIG, config)
 
-  CONFIG_OLD = Object.assign({}, CONFIG) // copying the current CONFIG object
-  _styleElement.innerText += '.' + CONFIG.className +
-    '{margin-right:-' +
+  let elementStyle = 'height:'
+  const scrollWidth = CONFIG.scrollWidth
+
+  if (scrollWidth === 0) {
+    elementStyle += '100%'
+  } else {
+    elementStyle += 'calc(100% + ' + scrollWidth + 'px);' +
+    'margin-right:-' +
     // additional 0.5px because of chrome rounding bug
-    (CONFIG.scrollWidth + .5) +
-    'px;height:calc(100% + ' +
-    CONFIG.scrollWidth + 'px)}'
+    (scrollWidth + 0.5) + 'px'
+  }
+
+  CONFIG_OLD = { ...CONFIG } // copying the current CONFIG object
+  CONFIG.styleElement.textContent +=
+  '.' + CONFIG.wrapperClassName +
+  '{overflow:hidden;height:100%}' +
+  '.' + CONFIG.className +
+    '{overflow:scroll;' + elementStyle + '}'
 }

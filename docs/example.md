@@ -1,5 +1,5 @@
 # Example
 
-*[Back to main menu](/FRS-hide-scrollbar)*
+*[Back to menu](/FRS-hide-scrollbar)*
 
 {% include_relative example.tpl.html %}

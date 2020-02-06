@@ -4,8 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--suppress HtmlUnknownTarget -->
   <script src="./FRS-hide-scrollbar.umd.js"></script>
-  <!--suppress HtmlUnknownTarget -->
-  <link href="./FRS-hide-scrollbar.css" rel="stylesheet"/>
 </head>
 <body>
 <style>
@@ -24,6 +22,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
+    width: 120%;
     font-size: 1.25rem;
     line-height: 1.4em;
     color: #fff;
@@ -45,6 +44,7 @@
   }
 
   .example-mobile-body {
+    box-sizing: border-box;
     padding: 40px 20px;
     width: 120%;
     background: #fff;
@@ -71,38 +71,45 @@
       height: 680px;
       border-style: solid;
       border-color: #323232;
-      border-width: 32px 13px 80px;
+      border-width: 9px;
       background: #efefef;
-      border-radius: 20px;
+      border-radius: 30px;
     }
 
     .phone-wrapper:before {
-      box-sizing: border-box;
-      content: "";
-      margin-top: -24px;
-      margin-left: 10px;
-      margin-bottom: 8px;
-      display: block;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      border: solid 7px #3a4f1a;
-      background: #5f6f2a;
-    }
-
-    .phone-wrapper:after {
       position: absolute;
-      bottom: -70px;
+      top: 0;
       left: 50%;
       box-sizing: border-box;
       content: "";
       display: block;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background: #444;
-      border: solid 2px #666;
+      width: 66%;
+      height: 22px;
+      border-radius: 0 0 16px 17px;
+      background: #323232;
       transform: translateX(-50%);
+      box-shadow: 0 0 2px .5px rgba(3, 3, 8, .25);
+    }
+
+    .phone-wrapper:after {
+      position: absolute;
+      box-sizing: border-box;
+      content: "";
+      margin-top: 3px;
+      margin-left: 50px;
+      top: 0;
+      left: 50%;
+      margin-bottom: 8px;
+      display: block;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      border: solid 5px rgba(50, 55, 48, 0.8);
+      background: rgba(56, 193, 52, 0.2);
+    }
+
+    .frs-tc-item:first-child > header h4 {
+      padding-top: 22px;
     }
   }
 </style>

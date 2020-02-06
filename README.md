@@ -11,6 +11,10 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Bundle size](https://img.shields.io/bundlephobia/minzip/frs-hide-scrollbar)](https://bundlephobia.com/result?p=frs-hide-scrollbar)
 
-FRS-hide-scrollbar is cross-browser (supports both desktop & mobile devices), simple & lightweight library for hiding both horizontal & vertical scrollbars!
+FRS-hide-scrollbar is a cross-browser (supports both desktop & mobile devices), simple & lightweight library for hiding both horizontal & vertical scrollbars!
 
-For more information, please see [docs](https://frsource.github.io/FRS-hide-scrollbar/).
+## Table of contents
+
+* [Installation](https://frsource.github.io/FRS-hide-scrollbar/installation)
+* [Usage](https://frsource.github.io/FRS-hide-scrollbar/usage)
+* [Example](https://frsource.github.io/FRS-hide-scrollbar/example)

@@ -1,6 +1,6 @@
 # Installation
 
-*[Back to main menu](/FRS-hide-scrollbar)*
+*[Back to menu](/FRS-hide-scrollbar)*
 
 Just install `frs-hide-scrollbar` package with you favourite package manager:
 
