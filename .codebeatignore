@@ -1,0 +1,6 @@
+scripts/**
+docs/**
+dist/**
+scripts/*
+docs/*
+dist/*

@@ -7,7 +7,7 @@
 [![Dependabot badge](https://api.dependabot.com/badges/status?host=github&repo=FRSource/FRS-hide-scrollbar)](https://dependabot.com/)
 [![Dependencies none](https://img.shields.io/badge/dependencies-none-brightgreen)](https://david-dm.org/frsource/frs-hide-scrollbar)
 [![Dev dependencies status](https://david-dm.org/frsource/frs-hide-scrollbar/dev-status.svg)](https://david-dm.org/frsource/frs-hide-scrollbar?type=dev)
-[![codebeat badge](https://codebeat.co/badges/5496a006-a13d-48cc-baeb-37c79a1f6444)](https://codebeat.co/projects/github-com-frsource-frs-replace-master)
+[![codebeat badge](https://codebeat.co/badges/0b194076-5621-478b-9169-ee527a5ce4a4)](https://codebeat.co/projects/github-com-frsource-frs-hide-scrollbar-master)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Bundle size](https://img.shields.io/bundlephobia/minzip/frs-hide-scrollbar)](https://bundlephobia.com/result?p=frs-hide-scrollbar)
 
