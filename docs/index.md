@@ -10,7 +10,9 @@
 [![codebeat badge](https://codebeat.co/badges/5496a006-a13d-48cc-baeb-37c79a1f6444)](https://codebeat.co/projects/github-com-frsource-frs-replace-master)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-FRS-hide-scrollbar is cross-browser (supports both desktop & mobile devices), simple & lightweight library for hiding both horizontal & vertical scrollbars!
+**FRS-hide-scrollbar** is a cross-browser (supports both desktop & mobile devices), simple & lightweight library for hiding both horizontal & vertical scrollbars!
+
+To gain better performance, all of heavy-lifting & continuous logic is handled by CSS. Start using **FRS-hide-scrollbar** today by reading documentation below:
 
 ## Table of contents
 
