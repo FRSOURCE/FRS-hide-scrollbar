@@ -2217,7 +2217,7 @@ cosmiconfig@^6.0.0:
     path-type "^4.0.0"
     yaml "^1.7.2"
 
-coveralls@^3.0.7, coveralls@^3.0.8:
+coveralls@^3.0.8, coveralls@^3.0.11, coveralls@^3.0.7:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/coveralls/-/coveralls-3.1.0.tgz#13c754d5e7a2dd8b44fe5269e21ca394fb4d615b"
   integrity sha512-sHxOu2ELzW8/NC1UP5XVLbZDzO4S3VxfFye3XYCznopHy02YjNkHcj5bKaVw2O7hVaBdBjEdQGpie4II1mWhuQ==
@@ -4295,9 +4295,9 @@ jsbn@~0.1.0:
   integrity sha1-peZUwuWi3rXyAdls77yoDA7y9RM=
 
 jsdom@^16.1.0:
-  version "16.2.2"
-  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-16.2.2.tgz#76f2f7541646beb46a938f5dc476b88705bedf2b"
-  integrity sha512-pDFQbcYtKBHxRaP55zGXCJWgFHkDAYbKcsXEK/3Icu9nKYZkutUXfLBwbD+09XDutkYSHcgfQLZ0qvpAAm9mvg==
+  version "16.4.0"
+  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-16.4.0.tgz#36005bde2d136f73eee1a830c6d45e55408edddb"
+  integrity sha512-lYMm3wYdgPhrl7pDcRmvzPhhrGVBeVhPIqeHjzeiHN3DFmD1RBpbExbi8vU7BJdH8VAZYovR8DMt0PNNDM7k8w==
   dependencies:
     abab "^2.0.3"
     acorn "^7.1.1"
@@ -4319,7 +4319,7 @@ jsdom@^16.1.0:
     tough-cookie "^3.0.1"
     w3c-hr-time "^1.0.2"
     w3c-xmlserializer "^2.0.0"
-    webidl-conversions "^6.0.0"
+    webidl-conversions "^6.1.0"
     whatwg-encoding "^1.0.5"
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
@@ -4933,11 +4933,6 @@ minimist-options@^4.0.2:
     arrify "^1.0.1"
     is-plain-obj "^1.1.0"
 
-minimist@0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
-  integrity sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0=
-
 minimist@^1.1.0, minimist@^1.1.3, minimist@^1.2.0, minimist@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
@@ -4958,12 +4953,12 @@ mixin-deep@^1.2.0:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
 
-mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
-  integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
+mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@^0.5.4, mkdirp@~0.5.1:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.5.tgz#d91cefd62d1436ca0f41620e251288d420099def"
+  integrity sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
   dependencies:
-    minimist "0.0.8"
+    minimist "^1.2.5"
 
 modify-values@^1.0.0:
   version "1.0.1"
@@ -7256,9 +7251,9 @@ tap-yaml@^1.0.0:
     yaml "^1.5.0"
 
 tap@^14.1.11:
-  version "14.10.7"
-  resolved "https://registry.yarnpkg.com/tap/-/tap-14.10.7.tgz#426ee130a81bd00951d0ab2cc1eba76cf1775c36"
-  integrity sha512-DVx00lfiMxFhofwFDP77pitRCruVQJn8Dcj/6auIU3dErJQWsKT94oG6Yj0MQRuYANhSec8ruIPyUjH/RI9Hrw==
+  version "14.10.8"
+  resolved "https://registry.yarnpkg.com/tap/-/tap-14.10.8.tgz#3c9ce79519acca2f40e57350513b2aa51c6e57c2"
+  integrity sha512-aamkWefJ0G8GGf9t5LWFtrNF5tfVd8ut/tDUianLF6N4621ERITIl0qkocWCVEnsM6hZnaMKa+SggSAaBlC2tA==
   dependencies:
     "@types/react" "^16.9.16"
     async-hook-domain "^1.1.3"
@@ -7266,7 +7261,7 @@ tap@^14.1.11:
     browser-process-hrtime "^1.0.0"
     chokidar "^3.3.0"
     color-support "^1.1.0"
-    coveralls "^3.0.8"
+    coveralls "^3.0.11"
     diff "^4.0.1"
     esm "^3.2.25"
     findit "^2.0.0"
@@ -7281,7 +7276,7 @@ tap@^14.1.11:
     istanbul-lib-processinfo "^1.0.0"
     jackspeak "^1.4.0"
     minipass "^3.1.1"
-    mkdirp "^0.5.1"
+    mkdirp "^0.5.4"
     nyc "^14.1.1"
     opener "^1.5.1"
     own-or "^1.0.0"
@@ -7732,10 +7727,10 @@ webidl-conversions@^5.0.0:
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-5.0.0.tgz#ae59c8a00b121543a2acc65c0434f57b0fc11aff"
   integrity sha512-VlZwKPCkYKxQgeSbH5EyngOmRp7Ww7I9rQLERETtf5ofd9pGeswWiOtogpEO850jziPRarreGxn5QIiTqpb2wA==
 
-webidl-conversions@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-6.0.0.tgz#ff41d921371f43e772dba311b146ab6c0ef0ead4"
-  integrity sha512-jTZAeJnc6D+yAOjygbJOs33kVQIk5H6fj9SFDOhIKjsf9HiAzL/c+tAJsc8ASWafvhNkH+wJZms47pmajkhatA==
+webidl-conversions@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-6.1.0.tgz#9111b4d7ea80acd40f5270d666621afa78b69514"
+  integrity sha512-qBIvFLGiBpLjfwmYAaHPXsn+ho5xZnGvyGvsarywGNc8VyQJUMHJ8OBKGGrPER0okBeMDaan4mNBlgBROxuI8w==
 
 whatwg-encoding@^1.0.5:
   version "1.0.5"
