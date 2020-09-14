@@ -57,7 +57,7 @@
     "coveralls": "^3.0.7",
     "cpy-cli": "^3.0.0",
     "jsdom": "^16.1.0",
-    "microbundle": "^0.11.0",
+    "microbundle": "^0.12.3",
     "rimraf": "^3.0.0",
     "standard": "^14.3.1",
     "standard-version": "^8.0.0",
