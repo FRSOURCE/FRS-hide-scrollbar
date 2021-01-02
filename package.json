@@ -1,6 +1,6 @@
 {
   "name": "frs-hide-scrollbar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy & lightweight solution for cross-browser scrollbar hiding",
   "source": "src/index.mjs",
   "main": "dist/FRS-hide-scrollbar.js",
