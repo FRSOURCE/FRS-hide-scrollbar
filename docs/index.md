@@ -16,3 +16,4 @@ Start using **FRS-hide-scrollbar** today by reading documentation below:
 * [Installation](/FRS-hide-scrollbar/installation)
 * [Usage](/FRS-hide-scrollbar/usage)
 * [Example](/FRS-hide-scrollbar/example)
+* [Migration from version 1](/FRS-hide-scrollbar/migration-v1)

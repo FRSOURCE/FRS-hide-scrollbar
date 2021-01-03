@@ -7,13 +7,14 @@
 [![Dev dependencies status](https://david-dm.org/frsource/frs-hide-scrollbar/dev-status.svg)](https://david-dm.org/frsource/frs-hide-scrollbar?type=dev)
 [![Bundle size](https://img.shields.io/bundlephobia/minzip/frs-hide-scrollbar)](https://bundlephobia.com/result?p=frs-hide-scrollbar)
 
-**FRS-hide-scrollbar** is a css-only, cross-browser (IE10+, supports both desktop & mobile devices), simple & lightweight library for hiding scrollbars!
+> This is a README of the old-dated, version 1 of the package. To read about the newest version [click here.](/FRS-hide-scrollbar)
 
-Start using **FRS-hide-scrollbar** today by reading documentation below:
+**FRS-hide-scrollbar** is a cross-browser (supports both desktop & mobile devices), simple & lightweight library for hiding both horizontal & vertical scrollbars!
+
+To gain better performance, all of heavy-lifting & continuous logic is handled by CSS. Start using **FRS-hide-scrollbar** today by reading documentation below:
 
 ## Table of contents
 
-* [Installation](https://www.frsource.org/FRS-hide-scrollbar/installation)
-* [Usage](https://www.frsource.org/FRS-hide-scrollbar/usage)
-* [Example](https://www.frsource.org/FRS-hide-scrollbar/example)
-* [Migration from version 1](https://www.frsource.org/FRS-hide-scrollbar/migration-v1)
+* [Installation](/FRS-hide-scrollbar/v1/installation)
+* [Usage](/FRS-hide-scrollbar/v1/usage)
+* [Example](/FRS-hide-scrollbar/v1/example)

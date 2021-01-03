@@ -46,7 +46,7 @@ And that's it!
 $frs-hide-scroll-classname: 'whatever';
 @import '~frs-hide-scrollbar';
 
-// now the package styling will be avaiable under .whatever class name
+// now the package styling will be avaiable under ".whatever" class name
 ```
 
 To see more real-life usage example let's jump to the [example page](/FRS-hide-scrollbar/example).
