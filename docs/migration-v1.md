@@ -4,30 +4,30 @@
 
 ## Importing the package to your project
 
-The `frs-hide-scrollbar` version 2 is a CSS-only package. That means that the main entry point of the package is not a JS but a CSS file from now on!
+The `@frsource/frs-hide-scrollbar` version 2 is a CSS-only package. That means that the main entry point of the package is not a JS but a CSS file from now on!
 
 You can import it into your project either from within your JS file:
 
 ```javascript
-import 'frs-hide-scrollbar';
+import '@frsource/frs-hide-scrollbar';
 // or
-require('frs-hide-scrollbar');
+require('@frsource/frs-hide-scrollbar');
 ```
 
 or SCSS:
 
 ```scss
-@import '~frs-hide-scrollbar';
+@import '~@frsource/frs-hide-scrollbar';
 ```
 
 or (as in the previous version) via HTML (either from local installation or from [unpkg](https://unpkg.com/#/) [CDN](https://en.wikipedia.org/wiki/Content_delivery_network)):
 
 ```html
-<script type="text/javascript" src="node_modules/frs-hide-scrollbar/dist/frs-hide-scrollbar.css"></script>
+<script type="text/javascript" src="node_modules/@frsource/frs-hide-scrollbar/dist/frs-hide-scrollbar.css"></script>
 
 <!-- or -->
 
-<script type="text/javascript" src="https://unpkg.com/frs-hide-scrollbar/dist/frs-hide-scrollbar.css"></script>
+<script type="text/javascript" src="https://unpkg.com/@frsource/frs-hide-scrollbar"></script>
 ```
 
 ## Configuring the package
@@ -36,7 +36,7 @@ Previously, you could've configure the package via JS. Now, because there is no 
 
 ```scss
 $frs-hide-scroll-classname: 'whatever';
-@import '~frs-hide-scrollbar';
+@import '~@frsource/frs-hide-scrollbar';
 
 // now the package styling will be avaiable under ".whatever" class name
 ```
@@ -65,4 +65,4 @@ But, in the version 2 you need only one element-wrapper (the one you have your `
 
 So, the most important part of the migration here would be to either remove elements with `frs-hide-scroll-wrapper` class completely from your codebase, or to simply remove the class name from them.
 
-And that's it. Now you can learn more about [usage of the `frs-hide-scrollbar` version 2](/FRS-hide-scrollbar/usage)!
+And that's it. Now you can learn more about [the usage of the `@frsource/frs-hide-scrollbar` version 2](/FRS-hide-scrollbar/usage)!
