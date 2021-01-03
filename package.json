@@ -1,6 +1,6 @@
 {
   "name": "frs-hide-scrollbar",
-  "version": "1.0.1",
+  "version": "2.0.0-alpha.0",
   "description": "CSS-only & ease-to-use solution for cross-browser scrollbar hiding",
   "source": "src/index.scss",
   "main": "dist/frs-hide-scrollbar.css",
@@ -13,7 +13,7 @@
     "postbuild:bundle": "yarn clean:dist:js",
     "build:example": "cpy dist/* docs",
     "prerelease": "yarn build && git add dist && git add docs",
-    "release": "yarn build && standard-version",
+    "release": "standard-version",
     "postrelease": "git push --follow-tags origin master && yarn publish",
     "clean": "rimraf dist/**/* && rimraf docs/*.{js,mjs,css,map}",
     "clean:dist:js": "rimraf dist/*.{js,mjs,js.map}"
