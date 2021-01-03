@@ -1,0 +1,10 @@
+$frs-hide-scroll-classname: 'frs-hide-scroll' !default;
+
+.#{$frs-hide-scroll-classname} {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

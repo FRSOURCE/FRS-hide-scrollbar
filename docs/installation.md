@@ -4,15 +4,9 @@
 
 Just install `frs-hide-scrollbar` package with you favourite package manager:
 
-like yarn
-
 ```bash
 yarn add frs-hide-scrollbar
-```
-
-or npm
-
-```bash
+# or
 npm install frs-hide-scrollbar --save
 ```
 

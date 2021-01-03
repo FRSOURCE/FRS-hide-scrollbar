@@ -4,74 +4,49 @@
 
 Simply require the package:
 
-```javascript
-const {FRSHideScrollbar} = require('frs-hide-scrollbar');
+Via SCSS:
+
+```scss
+@import '~frs-hide-scrollbar';
 ```
 
-ES6 import it:
+Via JavaScript:
 
 ```javascript
-import { FRSHideScrollbar } from 'frs-hide-scrollbar';
+import 'frs-hide-scrollbar';
+// or
+require('frs-hide-scrollbar');
 ```
 
-include it locally:
+include it in your HTML from local npm installation:
 
 ```html
-<script type="text/javascript" src="node_modules/frs-hide-scrollbar/dist/FRS-hide-scrollbar.umd.js"></script>
+<script type="text/javascript" src="node_modules/frs-hide-scrollbar/dist/frs-hide-scrollbar.css"></script>
 ```
 
 or from [unpkg](https://unpkg.com/#/) [CDN](https://en.wikipedia.org/wiki/Content_delivery_network):
 
 ```html
-<script type="text/javascript" src="https://unpkg.com/frs-hide-scrollbar/dist/FRS-hide-scrollbar.umd.js"></script>
-
+<script type="text/javascript" src="https://unpkg.com/frs-hide-scrollbar/dist/frs-hide-scrollbar.css"></script>
 ```
 
-To hide element scrollbar just add on it a `frs-hide-scroll` class and a `frs-hide-scroll-wrapper` on it`s container, like this:
+To hide element's scrollbar just add a `frs-hide-scroll` class to it.
 
 ```html
-<div class="frs-hide-scroll-wrapper">
-  <div class="frs-hide-scroll">
-    <!-- you content here -->
-  </div>
+<div class="frs-hide-scroll">
+  <!-- you content here -->
 </div>
 ```
 
-And that's it! Now FRSHideScrollbar library will detect if hiding of a scrollbar is needed and will apply correct styling changes.
+And that's it!
 
-> *Note:* There is possibility to change class names to custom ones if needed (and other options - see example below). Simply add proper configuration block **before** loading of `frs-hide-scrollbar` code:
+> *Note:* There is possibility to change class name to custom one if needed. Simply change the SCSS variable **before** importing `frs-hide-scrollbar` code:
 
-```html
-<script>
-window.FRSHideScrollBar = {
-  FRSHideScrollBar: {
-    /* default values written in object below */
-    config: {
-      /* element class name: */
-      className        : 'frs-hide-scroll',
-      /* parent element class name */
-      wrapperClassName : 'frs-hide-scroll-wrapper',
-      /* whether FRSHideScrollbar should initialize on DOm load & respond on window resize events */
-      autoInit         : true,
-      /* <style> element to which FRS-hide-scrollbar styling will be appended */
-      styleElement     : document.head.appendChild(document.createElement('style'))
-    }
-  }
-};
-</script>
+```scss
+$frs-hide-scroll-classname: 'whatever';
+@import '~frs-hide-scrollbar';
 
-<!-- Some script loading FRS-hide-scrollbar package -->
-
-```
-
-> *Note:* or change options dynamically via `update` method (you can change same options as above):
-
-```js
-import {FRSHideScrollbar} from 'frs-hide-scrollbar';
-
-FRSHideScrollbar.update({
-  className: 'newClassName'
-})
+// now the package styling will be avaiable under .whatever class name
 ```
 
 To see more real-life usage example let's jump to the [example page](/FRS-hide-scrollbar/example).

@@ -1,34 +1,26 @@
 {
   "name": "frs-hide-scrollbar",
   "version": "1.0.1",
-  "description": "Easy & lightweight solution for cross-browser scrollbar hiding",
-  "source": "src/index.mjs",
-  "main": "dist/FRS-hide-scrollbar.js",
-  "module": "dist/FRS-hide-scrollbar.mjs",
-  "umd:main": "dist/FRS-hide-scrollbar.umd.js",
-  "unpkg": "dist/FRS-hide-scrollbar.umd.js",
-  "esnext": "dist/FRS-hide-scrollbar.js",
+  "description": "CSS-only & ease-to-use solution for cross-browser scrollbar hiding",
+  "source": "src/index.scss",
+  "main": "dist/frs-hide-scrollbar.css",
   "scripts": {
-    "pretest": "yarn lint",
-    "test": "tap --node-arg=--experimental-modules ./src/scripts/*.spec.test.js",
-    "test-coverage": "yarn test && tap --100 --coverage-report=html",
-    "test-coverage:ci": "yarn test && tap --100 --coverage-report=text-lcov | coveralls",
     "prestart": "yarn clean",
-    "start": "microbundle watch -o docs --name FRSHideScrollbar",
+    "start": "microbundle watch -o docs --name frs-hide-scrollbar",
     "prebuild": "yarn clean",
     "build": "yarn build:bundle && yarn build:example",
-    "build:bundle": "microbundle --compress --name FRSHideScrollbar",
+    "build:bundle": "microbundle --compress -o dist/frs-hide-scrollbar.js -f cjs",
+    "postbuild:bundle": "yarn clean:dist:js",
     "build:example": "cpy dist/* docs",
-    "prerelease": "yarn test-coverage && yarn build && git add dist && git add docs",
+    "prerelease": "yarn build && git add dist && git add docs",
     "release": "yarn build && standard-version",
     "postrelease": "git push --follow-tags origin master && yarn publish",
-    "clean": "rimraf dist/**/* && rimraf docs/*.{js,mjs,css,map} && rimraf coverage",
-    "lint": "standard \"src/**/*.mjs\" \"src/**/*.test.js\"",
-    "lint.fix": "yarn lint --fix"
+    "clean": "rimraf dist/**/* && rimraf docs/*.{js,mjs,css,map}",
+    "clean:dist:js": "rimraf dist/*.{js,mjs,js.map}"
   },
   "author": "Jakub Freisler <FRSgit@users.noreply.github.com>",
   "license": "Apache-2.0",
-  "homepage": "https://frsource.github.io/FRS-hide-scrollbar/",
+  "homepage": "https://www.frsource.org/FRS-hide-scrollbar/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FRSource/FRS-hide-scrollbar.git"
@@ -38,11 +30,10 @@
     "efficient",
     "lightweight",
     "simple",
-    "vanillaJS",
+    "CSS",
+    "CSS-only",
     "hide scrollbar",
-    "scrollbar",
-    "css",
-    "js"
+    "scrollbar"
   ],
   "files": [
     "dist/",
@@ -54,14 +45,11 @@
     "url": "https://github.com/FRSource/FRS-hide-scrollbar/issues"
   },
   "devDependencies": {
-    "coveralls": "^3.0.7",
     "cpy-cli": "^3.0.0",
-    "jsdom": "^16.1.0",
     "microbundle": "^0.13.0",
     "rimraf": "^3.0.0",
-    "standard": "^16.0.3",
-    "standard-version": "^9.0.0",
-    "tap": "^14.1.11"
+    "sass": "^1.32.0",
+    "standard-version": "^9.0.0"
   },
   "dependencies": {}
 }
