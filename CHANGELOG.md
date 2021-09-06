@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [2.0.6](https://github.com/FRSource/FRS-hide-scrollbar/compare/v2.0.5...v2.0.6) (2021-09-06)
 
+
+### Bug Fixes
+
+* security updates
+
 ### [2.0.5](https://github.com/FRSource/FRS-hide-scrollbar/compare/v2.0.4...v2.0.5) (2021-02-28)
 
 
