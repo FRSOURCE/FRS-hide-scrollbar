@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.7](https://github.com/FRSource/FRS-hide-scrollbar/compare/v2.0.6...v2.0.7) (2022-01-04)
+
+
+### Bug Fixes
+
+* upgrade packages based on yarn audit ([bd84ecc](https://github.com/FRSource/FRS-hide-scrollbar/commit/bd84ecce6efa9d1f6017a49306f8cf462fd16685))
+
 ### [2.0.6](https://github.com/FRSource/FRS-hide-scrollbar/compare/v2.0.5...v2.0.6) (2021-09-06)
 
 
