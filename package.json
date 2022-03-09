@@ -45,7 +45,7 @@
     "url": "https://github.com/FRSource/FRS-hide-scrollbar/issues"
   },
   "devDependencies": {
-    "cpy-cli": "^3.0.0",
+    "cpy-cli": "^4.0.0",
     "microbundle": "^0.14.0",
     "rimraf": "^3.0.0",
     "sass": "^1.32.0",
