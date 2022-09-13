@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "cpy-cli": "4.2.0",
-    "microbundle": "0.15.0",
+    "microbundle": "0.15.1",
     "rimraf": "3.0.2",
     "sass": "1.54.9",
     "standard-version": "9.5.0"
