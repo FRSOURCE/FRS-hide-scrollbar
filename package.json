@@ -11,9 +11,10 @@
     "build": "yarn build:bundle && yarn build:example",
     "build:bundle": "microbundle --compress -o dist/frs-hide-scrollbar.js -f cjs",
     "postbuild:bundle": "yarn clean:dist:js",
-    "build:example": "cpy dist/* docs",
+    "build:example": "cpy . ../docs --cwd dist",
     "prerelease": "yarn build && git add dist && git add docs",
-    "release": "standard-version",
+    "release": "semantic-release",
+    "release:ci": "yarn release --yes",
     "postrelease": "git push --follow-tags origin master && yarn publish",
     "clean": "rimraf dist/**/* && rimraf docs/*.{js,mjs,css,map}",
     "clean:dist:js": "rimraf dist/*.{js,mjs,js.map}"
@@ -45,11 +46,20 @@
     "url": "https://github.com/FRSource/FRS-hide-scrollbar/issues"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.7",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "cpy-cli": "4.2.0",
     "microbundle": "0.15.1",
     "rimraf": "3.0.2",
     "sass": "1.56.2",
-    "standard-version": "9.5.0"
+    "semantic-release": "^19.0.5"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {}
 }
