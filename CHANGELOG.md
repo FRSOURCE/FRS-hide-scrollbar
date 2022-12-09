@@ -1,3 +1,5 @@
+## [2.0.8](https://github.com/FRSource/FRS-hide-scrollbar/compare/v2.0.7...v2.0.8) (2022-12-09)
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
