@@ -36,10 +36,10 @@
     "scrollbar"
   ],
   "files": [
-    "dist/",
-    "src/",
-    "LICENSE",
-    "yarn.lock"
+    "dist/frs-hide-scrollbar.css",
+    "dist/frs-hide-scrollbar.css.map",
+    "src/index.scss",
+    "package.json"
   ],
   "bugs": {
     "url": "https://github.com/FRSource/FRS-hide-scrollbar/issues"
