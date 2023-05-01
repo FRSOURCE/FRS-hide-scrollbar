@@ -54,7 +54,7 @@
     "@semantic-release/release-notes-generator": "^10.0.3",
     "cpy-cli": "4.2.0",
     "microbundle": "0.15.1",
-    "rimraf": "3.0.2",
+    "rimraf": "5.0.0",
     "sass": "1.62.1",
     "semantic-release": "^19.0.5"
   },
