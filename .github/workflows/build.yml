@@ -19,34 +19,16 @@ jobs:
         run: |
           git config --global user.name "$(git --no-pager log --format=format:'%an' -n 1)"
           git config --global user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
+      - uses: pnpm/action-setup@v2
       - uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
-      - name: Set yarn cache directory
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-      - name: Cache node modules
-        id: yarn-cache
-        uses: actions/cache@v3
-        env:
-            cache-name: cache-node-modules
-        with:
-            path: |
-                ${{ steps.yarn-cache-dir-path.outputs.dir }}
-                node_modules
-            key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
-            restore-keys: |
-                ${{ runner.os }}-build-${{ env.cache-name }}-
-                ${{ runner.os }}-build-
-                ${{ runner.os }}-
-      - name: Install dependencies if needed.
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn install --ignore-platform --frozen-lockfile
+          cache: 'pnpm'
+      - run: pnpm install --frozen-lockfile
       - name: Build package
-        run: yarn build
+        run: pnpm build
       - name: release package
         if: ${{ success() && github.ref == 'refs/heads/master' && github.event_name == 'push' }}
-        run: yarn release:ci
+        run: pnpm release:ci
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_REGISTRY: https://registry.npmjs.org/
