@@ -2,9 +2,11 @@
 
 *[Back to menu](/FRS-hide-scrollbar)*
 
-Just install `@frsource/frs-hide-scrollbar` package with you favourite package manager:
+Just install `@frsource/frs-hide-scrollbar` package with your favorite package manager:
 
 ```bash
+pnpm add @frsource/frs-hide-scrollbar
+# or
 yarn add @frsource/frs-hide-scrollbar
 # or
 npm install @frsource/frs-hide-scrollbar --save
@@ -12,7 +14,7 @@ npm install @frsource/frs-hide-scrollbar --save
 
 or download it zipped:
 
-[from @frsource/frs-hide-scrollbar Releases](https://github.com/FRSource/FRS-hide-scrollbar/releases)
+[from @frsource/frs-hide-scrollbar Releases](https://github.com/FRSOURCE/FRS-hide-scrollbar/releases)
 
 or just use CDN-hosted file (details in next step - usage).
 

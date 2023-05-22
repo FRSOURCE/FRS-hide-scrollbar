@@ -5,17 +5,13 @@
   "source": "src/index.scss",
   "main": "dist/frs-hide-scrollbar.css",
   "scripts": {
-    "prestart": "yarn clean",
-    "start": "microbundle watch -o docs --name frs-hide-scrollbar",
-    "prebuild": "yarn clean",
-    "build": "yarn build:bundle && yarn build:example",
-    "build:bundle": "microbundle --compress -o dist/frs-hide-scrollbar.js -f cjs",
-    "postbuild:bundle": "yarn clean:dist:js",
+    "start": "pnpm clean && microbundle watch -o docs --name frs-hide-scrollbar",
+    "build": "pnpm clean && pnpm build:bundle && pnpm build:example",
+    "build:bundle": "microbundle --compress -o dist/frs-hide-scrollbar.js -f cjs && pnpm clean:dist:js",
     "build:example": "cpy . ../docs --cwd dist",
-    "prerelease": "yarn build && git add dist && git add docs",
-    "release": "semantic-release",
-    "release:ci": "yarn release --yes",
-    "postrelease": "git push --follow-tags origin master && yarn publish",
+    "release": "pnpm build && git add dist && git add docs && semantic-release",
+    "release:ci": "pnpm release --yes",
+    "postrelease": "git push --follow-tags origin master && pnpm publish",
     "clean": "rimraf dist/**/* && rimraf docs/*.{js,mjs,css,map}",
     "clean:dist:js": "rimraf dist/*.{js,mjs,js.map}"
   },
@@ -50,16 +46,20 @@
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.7",
-    "@semantic-release/npm": "^9.0.1",
-    "@semantic-release/release-notes-generator": "^10.0.3",
+    "@semantic-release/npm": "^10.0.0",
+    "@semantic-release/release-notes-generator": "^11.0.0",
     "cpy-cli": "4.2.0",
     "microbundle": "0.15.1",
-    "rimraf": "3.0.2",
+    "rimraf": "5.0.1",
     "sass": "1.62.1",
-    "semantic-release": "^19.0.5"
+    "semantic-release": "^21.0.0"
   },
+  "packageManager": "pnpm@8.5.1",
   "publishConfig": {
     "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {}
 }
