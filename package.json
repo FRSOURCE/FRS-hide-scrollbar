@@ -54,7 +54,7 @@
     "sass": "1.62.1",
     "semantic-release": "^21.0.0"
   },
-  "packageManager": "pnpm@8.6.0",
+  "packageManager": "pnpm@8.6.2",
   "publishConfig": {
     "access": "public"
   },
