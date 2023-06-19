@@ -51,7 +51,7 @@
     "cpy-cli": "4.2.0",
     "microbundle": "0.15.1",
     "rimraf": "5.0.1",
-    "sass": "1.63.3",
+    "sass": "1.63.4",
     "semantic-release": "^21.0.0"
   },
   "packageManager": "pnpm@8.6.2",
