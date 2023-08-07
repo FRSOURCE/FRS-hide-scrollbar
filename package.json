@@ -51,10 +51,10 @@
     "cpy-cli": "5.0.0",
     "microbundle": "0.15.1",
     "rimraf": "5.0.1",
-    "sass": "1.64.1",
+    "sass": "1.64.2",
     "semantic-release": "^21.0.0"
   },
-  "packageManager": "pnpm@8.6.11",
+  "packageManager": "pnpm@8.6.12",
   "publishConfig": {
     "access": "public"
   },
