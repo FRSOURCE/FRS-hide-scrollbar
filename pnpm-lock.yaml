@@ -33,8 +33,8 @@ devDependencies:
     specifier: 5.0.5
     version: 5.0.5
   sass:
-    specifier: 1.69.6
-    version: 1.69.6
+    specifier: 1.69.7
+    version: 1.69.7
   semantic-release:
     specifier: ^22.0.0
     version: 22.0.5
@@ -4932,8 +4932,8 @@ packages:
     resolution: {integrity: sha512-6pNbSMW6OhAi9j+N8V+U715yBQsaWJ7eyEUaOrawX+isg5ZxhUlV1NipNtgaKHmFGiABwt+ZF04Ii+3Xjkg+8w==}
     dev: true
 
-  /sass@1.69.6:
-    resolution: {integrity: sha512-qbRr3k9JGHWXCvZU77SD2OTwUlC+gNT+61JOLcmLm+XqH4h/5D+p4IIsxvpkB89S9AwJOyb5+rWNpIucaFxSFQ==}
+  /sass@1.69.7:
+    resolution: {integrity: sha512-rzj2soDeZ8wtE2egyLXgOOHQvaC2iosZrkF6v3EUG+tBwEvhqUCzm0VP3k9gHF9LXbSrRhT5SksoI56Iw8NPnQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
