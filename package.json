@@ -52,7 +52,7 @@
     "microbundle": "0.15.1",
     "rimraf": "5.0.5",
     "sass": "1.71.1",
-    "semantic-release": "^22.0.0"
+    "semantic-release": "^23.0.0"
   },
   "packageManager": "pnpm@8.15.4",
   "publishConfig": {
