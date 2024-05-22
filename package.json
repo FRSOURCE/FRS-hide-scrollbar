@@ -9,14 +9,14 @@
     "build": "pnpm clean && pnpm build:bundle && pnpm build:example",
     "build:bundle": "microbundle --compress -o dist/frs-hide-scrollbar.js -f cjs && pnpm clean:dist:js",
     "build:example": "cpy . ../docs --cwd dist",
+    "lint": "eslint . && prettier . --check",
+    "fix": "pnpm eslint --fix && prettier . --write",
     "release": "pnpm build && git add dist && git add docs && semantic-release",
     "release:ci": "pnpm release --yes",
-    "postrelease": "git push --follow-tags origin master && pnpm publish",
+    "release:test": "pnpm release --no-git-tag-version --no-push --skip-npm",
     "clean": "rimraf dist/**/* && rimraf docs/*.{js,mjs,css,map}",
     "clean:dist:js": "rimraf dist/*.{js,mjs,js.map}"
   },
-  "author": "Jakub Freisler <FRSgit@users.noreply.github.com>",
-  "license": "Apache-2.0",
   "homepage": "https://www.frsource.org/FRS-hide-scrollbar/",
   "repository": {
     "type": "git",
@@ -39,20 +39,22 @@
     "package.json"
   ],
   "bugs": {
-    "url": "https://github.com/FRSource/FRS-hide-scrollbar/issues"
+    "url": "https://github.com/FRSOURCE/FRS-hide-scrollbar/issues"
   },
+  "author": "Jakub Freisler <jakub@frsource.org>",
+  "license": "MIT",
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.2",
-    "@semantic-release/commit-analyzer": "^11.0.0",
-    "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^9.0.0",
-    "@semantic-release/npm": "^11.0.0",
-    "@semantic-release/release-notes-generator": "^12.0.0",
+    "@frsource/eslint-config": "1.11.0",
+    "@frsource/prettier-config": "1.8.0",
+    "@frsource/semantic-release-config": "1.7.0",
     "cpy-cli": "5.0.0",
+    "eslint": "9.2.0",
+    "globals": "15.2.0",
     "microbundle": "0.15.1",
+    "prettier": "3.2.5",
     "rimraf": "5.0.7",
     "sass": "1.77.2",
-    "semantic-release": "^23.0.0"
+    "semantic-release": "23.1.1"
   },
   "packageManager": "pnpm@9.1.2",
   "publishConfig": {
@@ -61,5 +63,5 @@
   "engines": {
     "node": ">=18"
   },
-  "dependencies": {}
+  "funding": "https://buymeacoffee.com/frsource"
 }

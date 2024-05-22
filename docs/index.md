@@ -13,8 +13,8 @@ Start using **@frsource/frs-hide-scrollbar** today by reading documentation belo
 
 ## Table of contents
 
-* [Installation](/FRS-hide-scrollbar/installation)
-* [Usage](/FRS-hide-scrollbar/usage)
-* [Example](/FRS-hide-scrollbar/example)
-* [Migration from version 1](/FRS-hide-scrollbar/migration-v1)
-* [Version 1 documentation](/FRS-hide-scrollbar/v1)
+- [Installation](/FRS-hide-scrollbar/installation)
+- [Usage](/FRS-hide-scrollbar/usage)
+- [Example](/FRS-hide-scrollbar/example)
+- [Migration from version 1](/FRS-hide-scrollbar/migration-v1)
+- [Version 1 documentation](/FRS-hide-scrollbar/v1)

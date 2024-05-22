@@ -15,6 +15,6 @@ To gain better performance, all of heavy-lifting & continuous logic is handled b
 
 ## Table of contents
 
-* [Installation](/FRS-hide-scrollbar/v1/installation)
-* [Usage](/FRS-hide-scrollbar/v1/usage)
-* [Example](/FRS-hide-scrollbar/v1/example)
+- [Installation](/FRS-hide-scrollbar/v1/installation)
+- [Usage](/FRS-hide-scrollbar/v1/usage)
+- [Example](/FRS-hide-scrollbar/v1/example)

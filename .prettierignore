@@ -1,0 +1,4 @@
+**/dist
+docs/**/*.js
+pnpm-lock.yaml
+CHANGELOG.md

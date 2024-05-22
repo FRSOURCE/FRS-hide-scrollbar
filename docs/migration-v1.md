@@ -1,6 +1,6 @@
 # Migration from version 1
 
-*[Back to menu](/FRS-hide-scrollbar)*
+_[Back to menu](/FRS-hide-scrollbar)_
 
 ## Importing the package to your project
 
@@ -23,11 +23,17 @@ or SCSS:
 or (as in the previous version) via HTML (either from local installation or from [unpkg](https://unpkg.com/#/) [CDN](https://en.wikipedia.org/wiki/Content_delivery_network)):
 
 ```html
-<script type="text/javascript" src="node_modules/@frsource/frs-hide-scrollbar/dist/frs-hide-scrollbar.css"></script>
+<script
+  type="text/javascript"
+  src="node_modules/@frsource/frs-hide-scrollbar/dist/frs-hide-scrollbar.css"
+></script>
 
 <!-- or -->
 
-<script type="text/javascript" src="https://unpkg.com/@frsource/frs-hide-scrollbar"></script>
+<script
+  type="text/javascript"
+  src="https://unpkg.com/@frsource/frs-hide-scrollbar"
+></script>
 ```
 
 ## Configuring the package

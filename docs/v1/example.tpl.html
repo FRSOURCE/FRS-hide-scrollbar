@@ -1,152 +1,172 @@
 <html lang="en">
-<head>
-  <title>FRS-hide-scrollbar version 1</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--suppress HtmlUnknownTarget -->
-  <script src="./FRS-hide-scrollbar.umd.js"></script>
-</head>
-<body>
-<style>
-  .example-section {
-    margin-bottom: 4vw;
-    overflow: hidden;
-  }
+  <head>
+    <title>FRS-hide-scrollbar version 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--suppress HtmlUnknownTarget -->
+    <script src="./FRS-hide-scrollbar.umd.js"></script>
+  </head>
+  <body>
+    <style>
+      .example-section {
+        margin-bottom: 4vw;
+        overflow: hidden;
+      }
 
-  .phone-wrapper {
-    width: 100vw;
-    height: 100vh;
-  }
+      .phone-wrapper {
+        width: 100vw;
+        height: 100vh;
+      }
 
-  .frs-tc-item > header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-    width: 120%;
-    font-size: 1.25rem;
-    line-height: 1.4em;
-    color: #fff;
-    background: cornflowerblue;
-  }
+      .frs-tc-item > header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        width: 120%;
+        font-size: 1.25rem;
+        line-height: 1.4em;
+        color: #fff;
+        background: cornflowerblue;
+      }
 
-  .frs-tc-item > header h4 {
-    display: inline-block;
-    margin: 0;
-    padding: 0 20px;
-    flex-basis: 100%;
-    font-weight: normal;
-    color: inherit;
-  }
+      .frs-tc-item > header h4 {
+        display: inline-block;
+        margin: 0;
+        padding: 0 20px;
+        flex-basis: 100%;
+        font-weight: normal;
+        color: inherit;
+      }
 
-  .frs-tc-item > header a {
-    padding: 0 10px;
-    font-size: .75em;
-  }
+      .frs-tc-item > header a {
+        padding: 0 10px;
+        font-size: 0.75em;
+      }
 
-  .example-mobile-body {
-    box-sizing: border-box;
-    padding: 40px 20px;
-    width: 120%;
-    background: #fff;
-  }
+      .example-mobile-body {
+        box-sizing: border-box;
+        padding: 40px 20px;
+        width: 120%;
+        background: #fff;
+      }
 
-  .example-mobile-body p {
-    margin-bottom: 2em;
-  }
+      .example-mobile-body p {
+        margin-bottom: 2em;
+      }
 
-  @media (min-device-width: 800px) {
-    .phone-wrapper {
-      position: relative;
-      box-sizing: border-box;
-      width: 360px;
-      height: 680px;
-      border-style: solid;
-      border-color: #323232;
-      border-width: 9px;
-      background: #efefef;
-      border-radius: 30px;
-    }
+      @media (min-device-width: 800px) {
+        .phone-wrapper {
+          position: relative;
+          box-sizing: border-box;
+          width: 360px;
+          height: 680px;
+          border-style: solid;
+          border-color: #323232;
+          border-width: 9px;
+          background: #efefef;
+          border-radius: 30px;
+        }
 
-    .phone-wrapper:before {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      box-sizing: border-box;
-      content: "";
-      display: block;
-      width: 66%;
-      height: 22px;
-      border-radius: 0 0 16px 17px;
-      background: #323232;
-      transform: translateX(-50%);
-      box-shadow: 0 0 2px .5px rgba(3, 3, 8, .25);
-    }
+        .phone-wrapper:before {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          box-sizing: border-box;
+          content: '';
+          display: block;
+          width: 66%;
+          height: 22px;
+          border-radius: 0 0 16px 17px;
+          background: #323232;
+          transform: translateX(-50%);
+          box-shadow: 0 0 2px 0.5px rgba(3, 3, 8, 0.25);
+        }
 
-    .phone-wrapper:after {
-      position: absolute;
-      box-sizing: border-box;
-      content: "";
-      margin-top: 3px;
-      margin-left: 50px;
-      top: 0;
-      left: 50%;
-      margin-bottom: 8px;
-      display: block;
-      width: 11px;
-      height: 11px;
-      border-radius: 50%;
-      border: solid 5px rgba(50, 55, 48, 0.8);
-      background: rgba(56, 193, 52, 0.2);
-    }
+        .phone-wrapper:after {
+          position: absolute;
+          box-sizing: border-box;
+          content: '';
+          margin-top: 3px;
+          margin-left: 50px;
+          top: 0;
+          left: 50%;
+          margin-bottom: 8px;
+          display: block;
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          border: solid 5px rgba(50, 55, 48, 0.8);
+          background: rgba(56, 193, 52, 0.2);
+        }
 
-    .frs-tc-item:first-child > header h4 {
-      padding-top: 22px;
-    }
-  }
-</style>
-<main>
-  <section class="example-section" id="1-example">
-    <header><h2>Try to scroll the area below up & down or left & right</h2></header>
-    <article class="phone-wrapper frs-hide-scroll-wrapper">
-      <div class="frs-hide-scroll">
-        <section class="frs-tc-item">
-          <header>
-            <h4>Some heading</h4>
-          </header>
-          <div class="example-mobile-body">
-            <p>This is example article of yours, try scrolling up & down to see FRS-hide-scroll in action!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit felis mi, a aliquam erat ullamcorper ac. Fusce et elit
-              pellentesque, sollicitudin ligula sollicitudin, bibendum nisl. Quisque fermentum nulla a velit pulvinar lacinia. Curabitur at nisi
-              fermentum, bibendum purus quis, ullamcorper tortor. Vivamus dapibus vitae augue non tempus. Quisque id porttitor neque. Ut
-              vestibulum,
-              urna gravida tempor blandit, purus odio mollis metus, in rutrum ante augue vitae neque. Curabitur eu interdum leo. Praesent nec arcu
-              neque. Maecenas vel tempor sem, at vehicula ligula. Aenean iaculis urna orci, dapibus vestibulum odio pulvinar eu. Nunc consectetur
-              in
-              tortor sit amet finibus. Morbi in suscipit augue, non vulputate ligula. Donec nec elit egestas, rutrum erat nec, feugiat elit.</p>
-            <p>Praesent pharetra posuere neque, id accumsan turpis. Ut pulvinar mattis quam. Ut et ullamcorper sem. Praesent massa dolor,
-              dignissim
-              pulvinar blandit eget, facilisis nec felis. Sed maximus massa vitae augue consectetur, nec aliquam purus malesuada. Fusce elementum,
-              sapien quis tincidunt interdum, lectus turpis suscipit eros, nec pharetra est diam quis urna. Morbi mollis semper tortor, sed rutrum
-              tortor posuere eget. Nam fringilla ligula eget lorem finibus, sit amet tristique tortor aliquet. Nullam sem ipsum, aliquam nec
-              dictum
-              id, ultricies eget orci. Praesent non nulla vehicula, pharetra purus non, tristique augue. Sed pharetra sed nisl vitae efficitur.
-              Suspendisse turpis risus, vestibulum a faucibus eget, gravida ut felis. Nam in odio ipsum. Pellentesque habitant morbi tristique
-              senectus et netus et malesuada fames ac turpis egestas. Aenean suscipit eget nisi mollis faucibus. Duis quis rutrum ipsum, eget
-              cursus
-              magna.</p>
+        .frs-tc-item:first-child > header h4 {
+          padding-top: 22px;
+        }
+      }
+    </style>
+    <main>
+      <section class="example-section" id="1-example">
+        <header>
+          <h2>Try to scroll the area below up & down or left & right</h2>
+        </header>
+        <article class="phone-wrapper frs-hide-scroll-wrapper">
+          <div class="frs-hide-scroll">
+            <section class="frs-tc-item">
+              <header>
+                <h4>Some heading</h4>
+              </header>
+              <div class="example-mobile-body">
+                <p>
+                  This is example article of yours, try scrolling up & down to
+                  see FRS-hide-scroll in action!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur hendrerit felis mi, a aliquam erat ullamcorper ac.
+                  Fusce et elit pellentesque, sollicitudin ligula sollicitudin,
+                  bibendum nisl. Quisque fermentum nulla a velit pulvinar
+                  lacinia. Curabitur at nisi fermentum, bibendum purus quis,
+                  ullamcorper tortor. Vivamus dapibus vitae augue non tempus.
+                  Quisque id porttitor neque. Ut vestibulum, urna gravida tempor
+                  blandit, purus odio mollis metus, in rutrum ante augue vitae
+                  neque. Curabitur eu interdum leo. Praesent nec arcu neque.
+                  Maecenas vel tempor sem, at vehicula ligula. Aenean iaculis
+                  urna orci, dapibus vestibulum odio pulvinar eu. Nunc
+                  consectetur in tortor sit amet finibus. Morbi in suscipit
+                  augue, non vulputate ligula. Donec nec elit egestas, rutrum
+                  erat nec, feugiat elit.
+                </p>
+                <p>
+                  Praesent pharetra posuere neque, id accumsan turpis. Ut
+                  pulvinar mattis quam. Ut et ullamcorper sem. Praesent massa
+                  dolor, dignissim pulvinar blandit eget, facilisis nec felis.
+                  Sed maximus massa vitae augue consectetur, nec aliquam purus
+                  malesuada. Fusce elementum, sapien quis tincidunt interdum,
+                  lectus turpis suscipit eros, nec pharetra est diam quis urna.
+                  Morbi mollis semper tortor, sed rutrum tortor posuere eget.
+                  Nam fringilla ligula eget lorem finibus, sit amet tristique
+                  tortor aliquet. Nullam sem ipsum, aliquam nec dictum id,
+                  ultricies eget orci. Praesent non nulla vehicula, pharetra
+                  purus non, tristique augue. Sed pharetra sed nisl vitae
+                  efficitur. Suspendisse turpis risus, vestibulum a faucibus
+                  eget, gravida ut felis. Nam in odio ipsum. Pellentesque
+                  habitant morbi tristique senectus et netus et malesuada fames
+                  ac turpis egestas. Aenean suscipit eget nisi mollis faucibus.
+                  Duis quis rutrum ipsum, eget cursus magna.
+                </p>
+              </div>
+            </section>
+            <section class="frs-tc-item">
+              <header>
+                <h4>Some heading #2</h4>
+              </header>
+              <div class="example-mobile-body">
+                <p>Pretty neat, isn't it?</p>
+              </div>
+            </section>
           </div>
-        </section>
-        <section class="frs-tc-item">
-          <header>
-            <h4>Some heading #2</h4>
-          </header>
-          <div class="example-mobile-body">
-            <p>Pretty neat, isn't it?</p>
-          </div>
-        </section>
-      </div>
-    </article>
-  </section>
-</main>
-</body>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
