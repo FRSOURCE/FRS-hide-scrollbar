@@ -24,8 +24,8 @@ importers:
         specifier: 9.5.0
         version: 9.5.0
       globals:
-        specifier: 15.3.0
-        version: 15.3.0
+        specifier: 15.5.0
+        version: 15.5.0
       microbundle:
         specifier: 0.15.1
         version: 0.15.1
@@ -1816,8 +1816,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@15.3.0:
-    resolution: {integrity: sha512-cCdyVjIUVTtX8ZsPkq1oCsOsLmGIswqnjZYMJJTGaNApj1yHtLSymKhwH51ttirREn75z3p4k051clwg7rvNKA==}
+  globals@15.5.0:
+    resolution: {integrity: sha512-r7/9tQj5RylGxt/BKGv0D2SvehYvRFYg4ukSNk+EuZxvWI7uK/MJFmOCLq8aKvgh3EVBYFbBlOMAtaITXZr80w==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -4506,7 +4506,7 @@ snapshots:
       '@typescript-eslint/parser': 7.10.0(eslint@9.5.0)(typescript@4.1.3)
       eslint: 9.5.0
       eslint-config-prettier: 9.1.0(eslint@9.5.0)
-      globals: 15.3.0
+      globals: 15.5.0
       typescript: 4.1.3
       typescript-eslint: 7.10.0(eslint@9.5.0)(typescript@4.1.3)
     transitivePeerDependencies:
@@ -6069,7 +6069,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@15.3.0: {}
+  globals@15.5.0: {}
 
   globalthis@1.0.4:
     dependencies:
