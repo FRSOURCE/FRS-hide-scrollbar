@@ -49,14 +49,14 @@
     "@frsource/semantic-release-config": "1.9.0",
     "cpy-cli": "5.0.0",
     "eslint": "9.6.0",
-    "globals": "15.5.0",
+    "globals": "15.7.0",
     "microbundle": "0.15.1",
     "prettier": "3.3.2",
     "rimraf": "5.0.7",
     "sass": "1.77.6",
     "semantic-release": "24.0.0"
   },
-  "packageManager": "pnpm@9.3.0",
+  "packageManager": "pnpm@9.4.0",
   "publishConfig": {
     "access": "public"
   },
