@@ -46,17 +46,17 @@
   "devDependencies": {
     "@frsource/eslint-config": "1.16.0",
     "@frsource/prettier-config": "1.11.0",
-    "@frsource/semantic-release-config": "1.12.0",
+    "@frsource/semantic-release-config": "1.13.0",
     "cpy-cli": "5.0.0",
     "eslint": "9.10.0",
     "globals": "15.9.0",
     "microbundle": "0.15.1",
     "prettier": "3.3.3",
     "rimraf": "6.0.1",
-    "sass": "1.78.0",
+    "sass": "1.79.3",
     "semantic-release": "24.1.1"
   },
-  "packageManager": "pnpm@9.10.0",
+  "packageManager": "pnpm@9.11.0",
   "publishConfig": {
     "access": "public"
   },
