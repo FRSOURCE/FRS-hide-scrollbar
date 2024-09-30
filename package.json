@@ -53,8 +53,8 @@
     "microbundle": "0.15.1",
     "prettier": "3.3.3",
     "rimraf": "6.0.1",
-    "sass": "1.79.3",
-    "semantic-release": "24.1.1"
+    "sass": "1.79.4",
+    "semantic-release": "24.1.2"
   },
   "packageManager": "pnpm@9.11.0",
   "publishConfig": {
