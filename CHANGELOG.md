@@ -1,3 +1,5 @@
+## [2.0.56](https://github.com/FRSource/FRS-hide-scrollbar/compare/v2.0.55...v2.0.56) (2024-11-20)
+
 ## [2.0.55](https://github.com/FRSource/FRS-hide-scrollbar/compare/v2.0.54...v2.0.55) (2024-11-18)
 
 ## [2.0.54](https://github.com/FRSource/FRS-hide-scrollbar/compare/v2.0.53...v2.0.54) (2024-11-04)
