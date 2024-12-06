@@ -9,14 +9,14 @@ importers:
   .:
     devDependencies:
       '@frsource/eslint-config':
-        specifier: 1.25.0
-        version: 1.25.0(eslint@9.15.0)(typescript@4.1.3)
+        specifier: 1.26.0
+        version: 1.26.0(eslint@9.15.0)(typescript@4.1.3)
       '@frsource/prettier-config':
-        specifier: 1.17.0
-        version: 1.17.0(eslint@9.15.0)
+        specifier: 1.18.0
+        version: 1.18.0(eslint@9.15.0)
       '@frsource/semantic-release-config':
-        specifier: 1.28.0
-        version: 1.28.0(semantic-release@24.2.0(typescript@4.1.3))
+        specifier: 1.31.0
+        version: 1.31.0(semantic-release@24.2.0(typescript@4.1.3))
       cpy-cli:
         specifier: 5.0.0
         version: 5.0.0
@@ -24,8 +24,8 @@ importers:
         specifier: 9.15.0
         version: 9.15.0
       globals:
-        specifier: 15.12.0
-        version: 15.12.0
+        specifier: 15.13.0
+        version: 15.13.0
       microbundle:
         specifier: 0.15.1
         version: 0.15.1
@@ -36,8 +36,8 @@ importers:
         specifier: 6.0.1
         version: 6.0.1
       sass:
-        specifier: 1.81.0
-        version: 1.81.0
+        specifier: 1.82.0
+        version: 1.82.0
       semantic-release:
         specifier: 24.2.0
         version: 24.2.0(typescript@4.1.3)
@@ -555,19 +555,19 @@ packages:
     resolution: {integrity: sha512-2b/g5hRmpbb1o4GnTZax9N9m0FXzz9OV42ZzI4rDDMDuHUqigAiQCEWChBWCY4ztAGVRjoWT19v0yMmc5/L5kA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@frsource/eslint-config@1.25.0':
-    resolution: {integrity: sha512-dwMkiFCVWb6bEo/Paw1lHcsCYx6Pxmvy+BAFb2r0bU9ecT23caTKFITW6c/UIwG+RhaW4k8NBngnRY6YIueCcQ==}
+  '@frsource/eslint-config@1.26.0':
+    resolution: {integrity: sha512-kSEEs/KHs4RECBBXJ9p89sIYjHnYORjxkiSSy0YoFaW2Gd35AeH7gPR9AU6WkUWVPmqkkG0PlfkXtv1Z1Ur/0g==}
     peerDependencies:
       eslint: '>= 9'
       typescript: '>= 5.0.0'
 
-  '@frsource/prettier-config@1.17.0':
-    resolution: {integrity: sha512-PzmHnuDtyq8JZEYKaXDXe8wCUBz5BJxZkDqkfHD6nfnSdJOLJiiKnxOBZtVyWfp9qfQJg86njE5Lksd2eeWCIA==}
+  '@frsource/prettier-config@1.18.0':
+    resolution: {integrity: sha512-3Qye1mkW1U27ol0Nb/6y2zCEHjl5n/bqaRDj0vvggz519weGcIK6C8TR817yV+J1a0K+fLW0HaJdDmcMI3Ceug==}
     peerDependencies:
       eslint: '>= 3'
 
-  '@frsource/semantic-release-config@1.28.0':
-    resolution: {integrity: sha512-Cr433Tp/am/7RBJaEXTsR/UaFfrJv6Mw9LFKLNfo+/s88+a8RyEZXkKz9+BSsyBr5nRpfkDT/di36cSMAZbZzw==}
+  '@frsource/semantic-release-config@1.31.0':
+    resolution: {integrity: sha512-xvvE6EAr/cOFmVUvZyLccqs7IShwq09xUwPRkXwbyXEHfSFB49zml9AJ56FwogCNedAk03QnQhPlhXKTy05IWg==}
     peerDependencies:
       semantic-release: '>= 24'
 
@@ -1875,8 +1875,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@15.12.0:
-    resolution: {integrity: sha512-1+gLErljJFhbOVyaetcwJiJ4+eLe45S2E7P5UiZ9xGfeq3ATQf5DOv9G7MH3gGbKQLkzmNh2DxfZwLdw+j6oTQ==}
+  globals@15.13.0:
+    resolution: {integrity: sha512-49TewVEz0UxZjr1WYYsWpPrhyC/B/pA8Bq0fUmet2n+eR7yn0IvNzNaoBwnK6mdkzcN+se7Ez9zUgULTz2QH4g==}
     engines: {node: '>=18'}
 
   globalthis@1.0.4:
@@ -3272,8 +3272,8 @@ packages:
     resolution: {integrity: sha512-CdASjNJPvRa7roO6Ra/gLYBTzYzzPyyBXxIMdGW3USQLyjWEls2RgW5UBTXaQVp+OrpeCK3bLem8smtmheoRuw==}
     engines: {node: '>= 0.4'}
 
-  sass@1.81.0:
-    resolution: {integrity: sha512-Q4fOxRfhmv3sqCLoGfvrC9pRV8btc0UtqL9mN6Yrv6Qi9ScL55CVH1vlPP863ISLEEMNLLuu9P+enCeGHlnzhA==}
+  sass@1.82.0:
+    resolution: {integrity: sha512-j4GMCTa8elGyN9A7x7bEglx0VgSpNUG4W4wNedQ33wSMdnkqQCT8HTwOaVSV4e6yQovcu/3Oc4coJP/l0xhL2Q==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -4518,24 +4518,24 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
-  '@frsource/eslint-config@1.25.0(eslint@9.15.0)(typescript@4.1.3)':
+  '@frsource/eslint-config@1.26.0(eslint@9.15.0)(typescript@4.1.3)':
     dependencies:
       '@eslint/js': 9.15.0
       '@typescript-eslint/eslint-plugin': 8.15.0(@typescript-eslint/parser@8.15.0(eslint@9.15.0)(typescript@4.1.3))(eslint@9.15.0)(typescript@4.1.3)
       '@typescript-eslint/parser': 8.15.0(eslint@9.15.0)(typescript@4.1.3)
       eslint: 9.15.0
       eslint-config-prettier: 9.1.0(eslint@9.15.0)
-      globals: 15.12.0
+      globals: 15.13.0
       typescript: 4.1.3
       typescript-eslint: 8.5.0(eslint@9.15.0)(typescript@4.1.3)
     transitivePeerDependencies:
       - supports-color
 
-  '@frsource/prettier-config@1.17.0(eslint@9.15.0)':
+  '@frsource/prettier-config@1.18.0(eslint@9.15.0)':
     dependencies:
       eslint: 9.15.0
 
-  '@frsource/semantic-release-config@1.28.0(semantic-release@24.2.0(typescript@4.1.3))':
+  '@frsource/semantic-release-config@1.31.0(semantic-release@24.2.0(typescript@4.1.3))':
     dependencies:
       '@semantic-release/changelog': 6.0.3(semantic-release@24.2.0(typescript@4.1.3))
       '@semantic-release/commit-analyzer': 13.0.0(semantic-release@24.2.0(typescript@4.1.3))
@@ -6091,7 +6091,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@15.12.0: {}
+  globals@15.13.0: {}
 
   globalthis@1.0.4:
     dependencies:
@@ -7455,7 +7455,7 @@ snapshots:
       es-errors: 1.3.0
       is-regex: 1.1.4
 
-  sass@1.81.0:
+  sass@1.82.0:
     dependencies:
       chokidar: 4.0.1
       immutable: 5.0.3
