@@ -9,14 +9,14 @@ importers:
   .:
     devDependencies:
       '@frsource/eslint-config':
-        specifier: 1.33.0
-        version: 1.33.0(eslint@9.17.0)(typescript@4.1.3)
+        specifier: 1.34.0
+        version: 1.34.0(eslint@9.17.0)(typescript@4.1.3)
       '@frsource/prettier-config':
-        specifier: 1.21.0
-        version: 1.21.0(eslint@9.17.0)
+        specifier: 1.22.0
+        version: 1.22.0(eslint@9.17.0)
       '@frsource/semantic-release-config':
-        specifier: 1.37.0
-        version: 1.37.0(semantic-release@24.2.1(typescript@4.1.3))
+        specifier: 1.40.0
+        version: 1.40.0(semantic-release@24.2.1(typescript@4.1.3))
       cpy-cli:
         specifier: 5.0.0
         version: 5.0.0
@@ -585,19 +585,19 @@ packages:
     resolution: {integrity: sha512-2b/g5hRmpbb1o4GnTZax9N9m0FXzz9OV42ZzI4rDDMDuHUqigAiQCEWChBWCY4ztAGVRjoWT19v0yMmc5/L5kA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@frsource/eslint-config@1.33.0':
-    resolution: {integrity: sha512-k4TcDQe6D3T18Xs9aem2EcYh0OZbwiTucaPJZwyunMAYEaaqUfqXISaFP20bAmZ9yIY/Q6mtWB0liYgrypsC/A==}
+  '@frsource/eslint-config@1.34.0':
+    resolution: {integrity: sha512-EhwyTM9EFxUK88o/hK5+TIZlInfJlBOM9e8X1kC2Pm5IJT9FI/pAhECArWFJ47WXqbUXf7Lap7maVxrhd2KY8Q==}
     peerDependencies:
       eslint: '>= 9'
       typescript: '>= 5.0.0'
 
-  '@frsource/prettier-config@1.21.0':
-    resolution: {integrity: sha512-ib4szMAn3CmJkmnEwQi5flIz4cRykP9Is85s9JoN/bsbO4BLBrXhV4VFlJkPSSMmeMMDRkg4l+EDbn9iIgXJHg==}
+  '@frsource/prettier-config@1.22.0':
+    resolution: {integrity: sha512-GSlEgtV4uNmN0NoeavCITfeD0b4ROfH6kidzVyn3NVrBaqFBOn2lFYOxVxEmY6bYj4rDBWJtOBBorKL9xFYCYQ==}
     peerDependencies:
       eslint: '>= 3'
 
-  '@frsource/semantic-release-config@1.37.0':
-    resolution: {integrity: sha512-8mHdF8eybLN9vBflOVw+5Holy6x4+ZgdsmgurAnSFhPPD4qs53QTdgqQKfXdItTp5LrwAFrlXea+Ev06MHHCRA==}
+  '@frsource/semantic-release-config@1.40.0':
+    resolution: {integrity: sha512-ohECKU4EQZtH3rKAShfryUR5mFhZDIs2yrr2jpEcyMADanKr6P4CHc+MvikU+ReTyDHKs2L4cgYlYizCXetolw==}
     peerDependencies:
       semantic-release: '>= 24'
 
@@ -4132,7 +4132,7 @@ snapshots:
 
   '@babel/core@7.12.10':
     dependencies:
-      '@babel/code-frame': 7.24.2
+      '@babel/code-frame': 7.26.2
       '@babel/generator': 7.12.11
       '@babel/helper-module-transforms': 7.12.1
       '@babel/helpers': 7.12.5
@@ -4236,7 +4236,7 @@ snapshots:
       '@babel/helper-replace-supers': 7.12.11
       '@babel/helper-simple-access': 7.12.1
       '@babel/helper-split-export-declaration': 7.12.11
-      '@babel/helper-validator-identifier': 7.22.20
+      '@babel/helper-validator-identifier': 7.25.9
       '@babel/template': 7.12.7
       '@babel/traverse': 7.26.4
       '@babel/types': 7.12.12
@@ -4598,7 +4598,7 @@ snapshots:
       '@babel/helper-hoist-variables': 7.10.4
       '@babel/helper-module-transforms': 7.12.1
       '@babel/helper-plugin-utils': 7.10.4
-      '@babel/helper-validator-identifier': 7.22.20
+      '@babel/helper-validator-identifier': 7.25.9
       babel-plugin-dynamic-import-node: 2.3.3
     transitivePeerDependencies:
       - supports-color
@@ -4813,7 +4813,7 @@ snapshots:
 
   '@babel/template@7.12.7':
     dependencies:
-      '@babel/code-frame': 7.24.2
+      '@babel/code-frame': 7.26.2
       '@babel/parser': 7.12.11
       '@babel/types': 7.12.12
 
@@ -4837,7 +4837,7 @@ snapshots:
 
   '@babel/types@7.12.12':
     dependencies:
-      '@babel/helper-validator-identifier': 7.22.20
+      '@babel/helper-validator-identifier': 7.25.9
       lodash: 4.17.21
       to-fast-properties: 2.0.0
 
@@ -4888,7 +4888,7 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
-  '@frsource/eslint-config@1.33.0(eslint@9.17.0)(typescript@4.1.3)':
+  '@frsource/eslint-config@1.34.0(eslint@9.17.0)(typescript@4.1.3)':
     dependencies:
       '@eslint/js': 9.17.0
       '@typescript-eslint/eslint-plugin': 8.18.2(@typescript-eslint/parser@8.18.2(eslint@9.17.0)(typescript@4.1.3))(eslint@9.17.0)(typescript@4.1.3)
@@ -4901,11 +4901,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@frsource/prettier-config@1.21.0(eslint@9.17.0)':
+  '@frsource/prettier-config@1.22.0(eslint@9.17.0)':
     dependencies:
       eslint: 9.17.0
 
-  '@frsource/semantic-release-config@1.37.0(semantic-release@24.2.1(typescript@4.1.3))':
+  '@frsource/semantic-release-config@1.40.0(semantic-release@24.2.1(typescript@4.1.3))':
     dependencies:
       '@semantic-release/changelog': 6.0.3(semantic-release@24.2.1(typescript@4.1.3))
       '@semantic-release/commit-analyzer': 13.0.1(semantic-release@24.2.1(typescript@4.1.3))
@@ -7635,7 +7635,7 @@ snapshots:
 
   parse-json@8.1.0:
     dependencies:
-      '@babel/code-frame': 7.24.2
+      '@babel/code-frame': 7.26.2
       index-to-position: 0.1.2
       type-fest: 4.18.2
 
@@ -8121,7 +8121,7 @@ snapshots:
 
   rollup-plugin-terser@7.0.2(rollup@2.79.2):
     dependencies:
-      '@babel/code-frame': 7.24.2
+      '@babel/code-frame': 7.26.2
       jest-worker: 26.6.2
       rollup: 2.79.2
       serialize-javascript: 4.0.0
