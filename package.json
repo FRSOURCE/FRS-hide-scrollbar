@@ -51,7 +51,7 @@
     "eslint": "9.21.0",
     "globals": "15.15.0",
     "microbundle": "0.15.1",
-    "prettier": "3.5.2",
+    "prettier": "3.5.3",
     "rimraf": "6.0.1",
     "sass": "1.85.1",
     "semantic-release": "24.2.3"
