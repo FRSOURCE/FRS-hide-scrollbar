@@ -15,8 +15,8 @@ importers:
         specifier: 1.23.0
         version: 1.23.0(eslint@9.21.0)
       '@frsource/semantic-release-config':
-        specifier: 1.48.0
-        version: 1.48.0(semantic-release@24.2.3(typescript@4.1.3))
+        specifier: 1.53.0
+        version: 1.53.0(semantic-release@24.2.3(typescript@4.1.3))
       cpy-cli:
         specifier: 5.0.0
         version: 5.0.0
@@ -588,8 +588,8 @@ packages:
     peerDependencies:
       eslint: '>= 3'
 
-  '@frsource/semantic-release-config@1.48.0':
-    resolution: {integrity: sha512-2fK5lPx0ULc7+TAJC+khroZd1yGYvbTXl0PL3UtJBL2rhLEawLlX3uUr6jUXFPTxInSmxwksISLWO1uHHik1jw==}
+  '@frsource/semantic-release-config@1.53.0':
+    resolution: {integrity: sha512-xhd153MhwIKaeSh7qKA8MDApZ9rhna2f4nvzd9xC2PYuTT2KkK+WBFOOAH1JVKh8cwhGTXy3LNtlNQxiGBO1YA==}
     peerDependencies:
       semantic-release: '>= 24'
 
@@ -4685,7 +4685,7 @@ snapshots:
     dependencies:
       eslint: 9.21.0
 
-  '@frsource/semantic-release-config@1.48.0(semantic-release@24.2.3(typescript@4.1.3))':
+  '@frsource/semantic-release-config@1.53.0(semantic-release@24.2.3(typescript@4.1.3))':
     dependencies:
       '@semantic-release/changelog': 6.0.3(semantic-release@24.2.3(typescript@4.1.3))
       '@semantic-release/commit-analyzer': 13.0.1(semantic-release@24.2.3(typescript@4.1.3))
