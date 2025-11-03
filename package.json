@@ -1,6 +1,6 @@
 {
   "name": "@frsource/frs-hide-scrollbar",
-  "version": "2.0.121",
+  "version": "2.0.122",
   "description": "CSS-only & easy-to-use solution for cross-browser scrollbar hiding",
   "source": "src/index.scss",
   "main": "dist/frs-hide-scrollbar.css",
