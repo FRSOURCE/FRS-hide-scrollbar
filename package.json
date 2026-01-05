@@ -49,7 +49,7 @@
     "@frsource/semantic-release-config": "1.97.0",
     "cpy-cli": "6.0.0",
     "eslint": "9.39.2",
-    "globals": "16.5.0",
+    "globals": "17.0.0",
     "microbundle": "0.15.1",
     "prettier": "3.6.2",
     "rimraf": "6.1.2",
