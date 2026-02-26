@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAAA,iBACE,oBAAqB,CACrB,uBACF,CACA,oCACE,YACF","file":"frs-hide-scrollbar.css","sourcesContent":[".frs-hide-scroll {\n  scrollbar-width: none;\n  -ms-overflow-style: none;\n}\n.frs-hide-scroll::-webkit-scrollbar {\n  display: none;\n}"]}
