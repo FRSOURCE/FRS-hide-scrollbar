@@ -18,8 +18,6 @@ jobs:
         with:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
-      - name: remove git auth
-        run: git config --unset http.https://github.com/.extraheader
       - run: pnpm install --frozen-lockfile
 
   lint:
@@ -33,8 +31,6 @@ jobs:
         with:
           node-version-file: '.nvmrc'
           cache: 'pnpm'
-      - name: remove git auth
-        run: git config --unset http.https://github.com/.extraheader
       - run: pnpm install --frozen-lockfile
       - name: Lint
         run: pnpm lint
