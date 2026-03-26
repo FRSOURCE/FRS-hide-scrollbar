@@ -4,7 +4,7 @@ import globals from 'globals';
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
   ...javascript,
-  { ignores: ['**/dist', '**/node_modules', 'docs/**/*.js'] },
+  { ignores: ['**/dist', '**/node_modules', 'docs/**/*.js', 'docs/**/*.css'] },
   {
     files: ['src/**'],
     languageOptions: {
