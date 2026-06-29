@@ -15,8 +15,8 @@ importers:
         specifier: 1.47.0
         version: 1.47.0(prettier@3.8.4)
       '@frsource/semantic-release-config':
-        specifier: 1.116.0
-        version: 1.116.0(semantic-release@25.0.5(typescript@4.1.3))
+        specifier: 1.116.2
+        version: 1.116.2(semantic-release@25.0.5(typescript@4.1.3))
       cpy-cli:
         specifier: 7.0.0
         version: 7.0.0
@@ -601,8 +601,8 @@ packages:
     peerDependencies:
       prettier: '>= 3'
 
-  '@frsource/semantic-release-config@1.116.0':
-    resolution: {integrity: sha512-JkkP80ouW9m5JH9N04kU/ZKtxjHYPxcmNzypiKk3N6GpCvY2eG/J5U8/RAtmDsKQEPkXULR3EcO86jXGzKIGLw==}
+  '@frsource/semantic-release-config@1.116.2':
+    resolution: {integrity: sha512-ySbUxeUiwO4eiNIjTX3DP4sq0KpOLn0Ao9B3ADgRK+6gLYyRKlnil0iYNITVmpceG2ffe7rwhWdjTVhlUDaPDA==}
     peerDependencies:
       semantic-release: '>= 24'
 
@@ -4545,7 +4545,7 @@ snapshots:
     dependencies:
       prettier: 3.8.4
 
-  '@frsource/semantic-release-config@1.116.0(semantic-release@25.0.5(typescript@4.1.3))':
+  '@frsource/semantic-release-config@1.116.2(semantic-release@25.0.5(typescript@4.1.3))':
     dependencies:
       '@semantic-release/changelog': 6.0.3(semantic-release@25.0.5(typescript@4.1.3))
       '@semantic-release/commit-analyzer': 13.0.1(semantic-release@25.0.5(typescript@4.1.3))
