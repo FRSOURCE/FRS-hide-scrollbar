@@ -48,7 +48,7 @@
     "@frsource/prettier-config": "1.47.7",
     "@frsource/semantic-release-config": "1.116.14",
     "cpy-cli": "7.0.0",
-    "eslint": "10.8.0",
+    "eslint": "10.8.1",
     "globals": "17.8.0",
     "microbundle": "0.15.1",
     "prettier": "3.9.6",
