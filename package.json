@@ -48,15 +48,15 @@
     "@frsource/prettier-config": "1.47.9",
     "@frsource/semantic-release-config": "1.116.17",
     "cpy-cli": "7.0.0",
-    "eslint": "10.9.1",
-    "globals": "17.11.0",
+    "eslint": "10.10.0",
+    "globals": "17.12.0",
     "microbundle": "0.15.1",
     "prettier": "3.9.6",
     "rimraf": "6.1.3",
-    "sass": "1.103.1",
+    "sass": "1.104.1",
     "semantic-release": "25.0.9"
   },
-  "packageManager": "pnpm@11.24.0",
+  "packageManager": "pnpm@11.27.0",
   "publishConfig": {
     "access": "public"
   },
