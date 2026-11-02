@@ -46,7 +46,7 @@
   "devDependencies": {
     "@frsource/eslint-config": "1.86.2",
     "@frsource/prettier-config": "1.48.1",
-    "@frsource/semantic-release-config": "1.117.4",
+    "@frsource/semantic-release-config": "1.117.5",
     "cpy-cli": "7.0.0",
     "eslint": "10.13.0",
     "globals": "17.13.0",
