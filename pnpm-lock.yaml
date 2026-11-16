@@ -167,11 +167,11 @@ importers:
   .:
     devDependencies:
       '@frsource/eslint-config':
-        specifier: 1.86.4
-        version: 1.86.4(eslint@10.13.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+        specifier: 1.86.5
+        version: 1.86.5(eslint@10.13.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       '@frsource/prettier-config':
-        specifier: 1.48.2
-        version: 1.48.2(prettier@3.9.10)
+        specifier: 1.48.3
+        version: 1.48.3(prettier@3.9.10)
       '@frsource/semantic-release-config':
         specifier: 1.117.9
         version: 1.117.9(semantic-release@25.0.9(supports-color@7.2.0)(typescript@6.0.3))(supports-color@7.2.0)
@@ -754,14 +754,14 @@ packages:
     resolution: {integrity: sha512-IkO+/KEUvwbVpiURZg+P7zF74z5Jxe0UgJxVni+RtoHQ6IZieXaO02kmadomap/q+l6bc/jdPGGqTjhuZnuz1Q==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  '@frsource/eslint-config@1.86.4':
-    resolution: {integrity: sha512-4tB7MFGBUq8XbyEZi0aBVyxCYhsdTAfUvC+K3XVEwPKaGPcrdDmzXDhOMQ2zXbgFm1IqkjaZ0YEs9C32HqzFYQ==}
+  '@frsource/eslint-config@1.86.5':
+    resolution: {integrity: sha512-uPDqo1zg2lPzVkkMiH1MjC2HjATtHB8ZrN+4wvXMw2UZvbdfI2bVpb+Dyk2NetvMCmmfFNbY5Xi8X/wX57zbjA==}
     peerDependencies:
       eslint: '>= 10'
       typescript: '>= 5.0.0'
 
-  '@frsource/prettier-config@1.48.2':
-    resolution: {integrity: sha512-BtrnUzvXL8IF3KGAFAsfFFWT8y5l3GvVFumem87pKRB6uancRPpr072BvH92zr+0Sygj9oPoifouUHnF/qklXA==}
+  '@frsource/prettier-config@1.48.3':
+    resolution: {integrity: sha512-AabQPkhpZR/91ayu26XNk6IUsIYa3hjxiqpE/Imz7MfUGpVSctcu9TmWAoHK8/nRkksWvJ9GTBSsfjI9dr1jBQ==}
     peerDependencies:
       prettier: '>= 3'
 
@@ -4727,7 +4727,7 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@frsource/eslint-config@1.86.4(eslint@10.13.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
+  '@frsource/eslint-config@1.86.5(eslint@10.13.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
       '@eslint/js': 10.0.1(eslint@10.13.0(supports-color@7.2.0))
       '@typescript-eslint/eslint-plugin': 8.72.1(@typescript-eslint/parser@8.72.1(eslint@10.13.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.13.0(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
@@ -4740,7 +4740,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@frsource/prettier-config@1.48.2(prettier@3.9.10)':
+  '@frsource/prettier-config@1.48.3(prettier@3.9.10)':
     dependencies:
       prettier: 3.9.10
 
